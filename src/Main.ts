@@ -17,13 +17,27 @@ export class Main{
         let axis = new THREE.AxesHelper(10)
         scene.add(axis)
         App.setCamera()
+
+
+        var mainGame = new game.Main_birds()
+        mainGame.initUI()
+
+
+
+
+        this.stattAni()
+    }
+    public stattAni(){
+        Animate.run()
     }
 }
 //run
 new Main().run()
-function animate(): void {requestAnimationFrame(animate);render()}
-function render(): void {App.renderer.render(App.scene, App.camera)}
-animate()
+// requestAnimationFrame(Animate.run)
+// function animate(): void {requestAnimationFrame(animate);render()}
+// function render(): void {App.renderer.render(App.scene, App.camera)}
+// animate()
+
 
 
 

@@ -5,9 +5,9 @@ module game {
         _maxSpeed = 4, _maxSteerForce = 0.1, _avoidWalls = false;
 
     export class Boid {
-         position:THREE.Vector3
-         velocity:THREE.Vector3
-        constructor(){
+            position:THREE.Vector3
+            velocity:THREE.Vector3
+            constructor(){
             this.position = new THREE.Vector3();
             this.velocity = new THREE.Vector3();
             _acceleration = new THREE.Vector3();
@@ -15,15 +15,15 @@ module game {
         public setGoal(target){
             _goal = target;
         }
-        public setAvoidWalls = function ( value ) {
+        public setAvoidWalls( value ) {
             _avoidWalls = value;
         };
-        public setWorldSize = function ( width, height, depth ) {
+        public setWorldSize ( width, height, depth ) {
             _width = width;
             _height = height;
             _depth = depth;
         };
-        public run = function ( boids ) {
+        public run ( boids ) {
             if ( _avoidWalls ) {
                 vector.set( - _width, this.position.y, this.position.z );
                 vector = this.avoid( vector );

@@ -2,19 +2,24 @@
 module App {
 
     export let renderer :THREE.WebGLRenderer
+    export let randerType  = 1 //0: canvas, 1 : webgl
     export let scene:THREE.Scene
-    export let camera:THREE.Camera
+    export let camera:THREE.PerspectiveCamera
     export interface pos {
         x: number;
         y: number;
         z: number;
     }
+    export const width = window.innerWidth
+
+    export const height = window.innerHeight
+
     /**
      * Window 添加事件
      * @param {string} uiEvent
      * @param fun
      */
-    export  function addWindowEventListener(uiEvent:string,fun:any){
+    export  function addWindowEventListener(uiEvent:string,fun:any,target:any){
         window.addEventListener( uiEvent, fun, false );
     }
 
@@ -23,7 +28,7 @@ module App {
      * @param {string} uiEvent
      * @param fun
      */
-    export function addDocumentEventListener(uiEvent:string,fun:any){
+    export function addDocumentEventListener(uiEvent:string,fun:any,options:Boolean){
         document.addEventListener( uiEvent, fun, false );
     }
 
