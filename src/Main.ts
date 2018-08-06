@@ -3,11 +3,13 @@
 import './../style/style.css'
 // three.js
 import * as THREE from 'three'
-
+import * as TWEEN from '@tweenjs/tween.js'
 export class Main{
+
     constructor(){
     }
     public run(){
+        var a = new TWEEN.Tween()
         let scene = new THREE.Scene()
         App.scene = scene
         let renderer = new THREE.WebGLRenderer()

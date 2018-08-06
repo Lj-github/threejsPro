@@ -1,5 +1,5 @@
 // 方便管理页面内多个TimeOut
-module EasyTimeOut{
+namespace AppTimeOut{
     interface timerEvent {
         cb:Function
         cbTgt:any

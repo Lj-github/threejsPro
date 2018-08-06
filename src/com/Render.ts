@@ -7,6 +7,7 @@ namespace Rander{
     export function run() {
         requestAnimationFrame( Animate.run);
         Rander.run()
+        //var ani = new TWEEN
 
     }
 

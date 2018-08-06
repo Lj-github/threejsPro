@@ -25,6 +25,7 @@
     "webpack-dev-server": "latest"
   },
   "dependencies": {
+    "@tweenjs/tween.js": "^17.2.0",
     "@types/three": "latest",
     "three": "latest"
   }
