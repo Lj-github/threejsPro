@@ -1,15 +1,15 @@
 // add styles
 // 主函数
-import './../style/style.css'
+//import '../style/style.css'
 // three.js
 import * as THREE from 'three'
-import * as TWEEN from '@tweenjs/tween.js'
+//import * as TWEEN from '@tweenjs/tween.js'
 export class Main{
 
     constructor(){
     }
     public run(){
-        var a = new TWEEN.Tween()
+       // var a = new TWEEN.Tween()
         let scene = new THREE.Scene()
         App.scene = scene
         let renderer = new THREE.WebGLRenderer()
@@ -19,7 +19,6 @@ export class Main{
         let axis = new THREE.AxesHelper(10)
         scene.add(axis)
         App.setCamera()
-
 
         var mainGame = new game.Main_birds()
         mainGame.initUI()

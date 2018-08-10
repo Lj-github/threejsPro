@@ -19,3 +19,8 @@ npm install typescript -g
 $ npm install # or yarn
 $ npm start
 ```
+### !!!!  webpack 一定要全局安装 
+
+
+
+
