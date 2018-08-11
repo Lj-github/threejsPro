@@ -1,4 +1,3 @@
-window["game"] = game
 module game {
 
     export class Main_birds {
@@ -8,7 +7,7 @@ module game {
             //game.Main.addWindowEventListener(){}
         }
         public initUI(){
-
+            this.birds = []
 
 
             for ( var i = 0; i < 200; i ++ ) {

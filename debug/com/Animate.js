@@ -6,4 +6,3 @@ var Animate;
     }
     Animate.run = run;
 })(Animate || (Animate = {}));
-//# sourceMappingURL=Animate.js.map

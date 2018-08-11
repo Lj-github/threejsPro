@@ -9,7 +9,7 @@
 
     "build": "tsc",
     "dev": "tsc -w",
-    "prepare": "npm run build",
+    "prepare": "npm run build"
 
 
   },

@@ -1,4 +1,3 @@
-window["game"] = game;
 var game;
 (function (game) {
     class Main_birds {
@@ -7,6 +6,7 @@ var game;
             //game.Main.addWindowEventListener(){}
         }
         initUI() {
+            this.birds = [];
             for (var i = 0; i < 200; i++) {
                 var boid = this.boids[i] = new game.Boid();
                 boid.position.x = Math.random() * 400 - 200;
@@ -40,4 +40,3 @@ var game;
     }
     game.Main_birds = Main_birds;
 })(game || (game = {}));
-//# sourceMappingURL=Main_birds.js.map

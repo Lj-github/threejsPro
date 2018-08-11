@@ -9,7 +9,7 @@
         "suppressImplicitAnyIndexErrors": true,
         "outDir": "./debug",
         "types": [],
-        "sourceMap": true
+        "sourceMap": false
     },
     "awesomeTypescriptLoaderOptions": {
         "useWebpackText": true,

@@ -10,4 +10,3 @@ var Rander;
     }
     Rander.run = run;
 })(Rander || (Rander = {}));
-//# sourceMappingURL=Render.js.map

@@ -1,4 +1,3 @@
-window["App"] = App
 
 namespace App {
     export function run() {

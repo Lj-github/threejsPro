@@ -1,4 +1,3 @@
-window["App"] = App;
 var App;
 (function (App) {
     function run() {
@@ -48,4 +47,3 @@ var App;
     App.setCamera = setCamera;
 })(App || (App = {}));
 //window["App"] = App
-//# sourceMappingURL=App.js.map

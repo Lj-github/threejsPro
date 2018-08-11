@@ -184,4 +184,3 @@ var game;
     }
     game.Boid = Boid;
 })(game || (game = {}));
-//# sourceMappingURL=Boid.js.map

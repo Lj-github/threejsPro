@@ -1,35 +1,60 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-// add styles
-// 主函数
-//import '../style/style.css'
-// three.js
 const THREE = require("three");
 window["THREE"] = THREE;
 const TWEEN = require("@tweenjs/tween.js");
 window["TWEEN"] = TWEEN;
-require("./com/App");
-require("./canvas_geometry_birds/Main_birds");
-require("./com/Animate");
-require("./com/APPTimeOut");
-require("./canvas_geometry_birds/Bird");
-// import {App} from "./com/App";
-//
-// //import App = require("com/App");
-// import Asspp = require("./canvas_geometry_birds/Bird");
-window["dsa"] = "";
-window["aaaaaa"] = "./src/com/App.ts";
-exports.admin = {};
-window["admin"] = exports.admin;
 class Main {
     constructor() { }
     run() { App.run(); }
 }
-exports.Main = Main;
-new Main().run();
-window["Main"] = Main;
+/*****start load js ****/
+var loadScript = function (list, callback) {
+    var loaded = 0;
+    var loadNext = function () {
+        var src = list[loaded];
+        loadSingleScript(src, function () {
+            loaded++;
+            if (loaded >= list.length) {
+                callback();
+            }
+            else {
+                loadNext();
+            }
+        });
+    };
+    loadNext();
+};
+var loadSingleScript = function (src, callback) {
+    if (src.split("/").pop() == "Main.js") {
+        callback();
+        return;
+    }
+    let cb = function (s) {
+        s.parentNode.removeChild(s);
+        s.removeEventListener('load', cb, false);
+        callback();
+    };
+    var s = document.createElement('script');
+    s.async = false;
+    s.src = src;
+    s.addEventListener('load', () => { cb(s); }, false);
+    document.body.appendChild(s);
+};
+var jsUrl = location.origin + "/resource/JS.json"; //jsFile
+var xhr = new XMLHttpRequest();
+xhr.open('GET', jsUrl + "?" + Math.random(), true);
+xhr.addEventListener("load", function () {
+    var manifest = JSON.parse(xhr.response);
+    var list = manifest.initial.concat(manifest.game);
+    loadScript(list, function () {
+        new Main().run();
+        window["Main"] = Main;
+    });
+});
+xhr.send(null);
+/*****load js end   ****/
 // requestAnimationFrame(Animate.run)
 // function animate(): void {requestAnimationFrame(animate);render()}
 // function render(): void {App.renderer.render(App.scene, App.camera)}
 // animate()
-//# sourceMappingURL=Main.js.map

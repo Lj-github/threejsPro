@@ -67,4 +67,3 @@ var Topic;
     }
     Topic.publish = publish;
 })(Topic || (Topic = {}));
-//# sourceMappingURL=Topic.js.map

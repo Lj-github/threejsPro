@@ -31,4 +31,3 @@ class aaaaa {
         console.log(444);
     }
 }
-//# sourceMappingURL=Bird.js.map

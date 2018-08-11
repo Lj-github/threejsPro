@@ -1,1 +1,1 @@
-{"a":5}
+{"game": ["/debug/canvas_geometry_birds/Bird.js", "/debug/canvas_geometry_birds/Boid.js", "/debug/canvas_geometry_birds/Main_birds.js", "/debug/com/Animate.js", "/debug/com/App.js", "/debug/com/APPTimeOut.js", "/debug/com/DomTopic.js", "/debug/com/Render.js", "/debug/com/SecTimeCb.js", "/debug/com/Topic.js", "/debug/Main.js"], "initial": []}
