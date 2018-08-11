@@ -15,6 +15,10 @@ namespace App {
         mainGame.initUI()
         Animate.run()
 
+
+    }
+    export function runWindowFrame(){
+
     }
     export let renderer :THREE.WebGLRenderer
     export let randerType  = 1 //0: canvas, 1 : webgl

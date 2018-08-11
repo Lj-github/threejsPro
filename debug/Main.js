@@ -54,7 +54,3 @@ xhr.addEventListener("load", function () {
 });
 xhr.send(null);
 /*****load js end   ****/
-// requestAnimationFrame(Animate.run)
-// function animate(): void {requestAnimationFrame(animate);render()}
-// function render(): void {App.renderer.render(App.scene, App.camera)}
-// animate()

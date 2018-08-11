@@ -2,37 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64aa553e-368f-4cb2-89ca-9216c281d9ea" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/three-typescript-starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/three-typescript-starter.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debug/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/Main.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/canvas_geometry_birds/Bird.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/canvas_geometry_birds/Bird.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/canvas_geometry_birds/Bird.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/canvas_geometry_birds/Boid.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/canvas_geometry_birds/Boid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/canvas_geometry_birds/Boid.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/debug/canvas_geometry_birds/Main_birds.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/canvas_geometry_birds/Main_birds.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/canvas_geometry_birds/Main_birds.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/com/APPTimeOut.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/com/APPTimeOut.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/com/APPTimeOut.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/debug/com/Animate.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/com/Animate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/com/Animate.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/debug/com/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/com/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/com/App.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/com/DomTopic.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/com/DomTopic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/com/DomTopic.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/com/Render.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/com/Render.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/com/Render.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/com/SecTimeCb.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/com/SecTimeCb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/com/SecTimeCb.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/com/Topic.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/com/Topic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/com/Topic.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/JS.json" beforeDir="false" afterPath="$PROJECT_DIR$/resource/JS.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/canvas_geometry_birds/Main_birds.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/canvas_geometry_birds/Main_birds.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Animate.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Animate.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/App.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/App.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,47 +24,42 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/threejsPro$runDebug.coverage" NAME="runDebug Coverage Results" MODIFIED="1533975648158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/threejsPro$runDebug.coverage" NAME="runDebug Coverage Results" MODIFIED="1533977926369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="APPTimeOut.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/APPTimeOut.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Main.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state relative-caret-position="627">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main_birds.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/debug/canvas_geometry_birds/Main_birds.js">
+      <file leaf-file-name="App.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/App.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="22" />
+            <state relative-caret-position="272">
+              <caret line="16" column="37" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="SecTimeCb.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/SecTimeCb.ts">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="13" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="Render.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Render.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <state relative-caret-position="119">
+              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -95,32 +69,40 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="Main_birds.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/canvas_geometry_birds/Main_birds.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="38" column="44" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Animate.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Animate.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="93">
+              <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/App.ts">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="canvas_geometry_birds.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/three.js-master/examples/canvas_geometry_birds.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="94">
+              <caret line="450" column="37" selection-start-line="450" selection-start-column="16" selection-end-line="450" selection-end-column="37" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="DomTopic.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/DomTopic.ts">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main_birds.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/canvas_geometry_birds/Main_birds.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -141,7 +123,10 @@
       <find>style</find>
       <find>three-typescript-starter</find>
       <find>allJSFile</find>
+      <find>yaojiangxitong</find>
       <find>boids</find>
+      <find>BoidBoid</find>
+      <find>requestAnimationFrame</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,17 +144,18 @@
         <option value="$PROJECT_DIR$/lib/tween/package.json" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/src/com/Animate.ts" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/resource/JS.json" />
         <option value="$PROJECT_DIR$/runDebug.py" />
         <option value="$PROJECT_DIR$/debug/Main.js" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/debug/canvas_geometry_birds/Main_birds.js" />
-        <option value="$PROJECT_DIR$/src/com/App.ts" />
-        <option value="$PROJECT_DIR$/src/Main.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/three.js-master/examples/canvas_geometry_birds.html" />
         <option value="$PROJECT_DIR$/src/canvas_geometry_birds/Main_birds.ts" />
+        <option value="$PROJECT_DIR$/src/com/Animate.ts" />
+        <option value="$PROJECT_DIR$/src/Main.ts" />
+        <option value="$PROJECT_DIR$/src/com/App.ts" />
       </list>
     </option>
   </component>
@@ -184,9 +170,9 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-107" />
-    <option name="y" value="149" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1686" />
+    <option name="y" value="28" />
     <option name="width" value="1920" />
     <option name="height" value="979" />
   </component>
@@ -243,6 +229,11 @@
               <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
+              <item name="three.js-master" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -326,20 +317,22 @@
     <option name="totallyTimeSpent" value="22137000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="979" extended-state="6" />
+    <frame x="-1706" y="33" width="1920" height="979" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="16" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.42857143" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.28288707" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.1757858" />
       <window_info anchor="bottom" id="Python Console" order="1" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.31315482" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.22817229" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15282215" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" />
       <window_info anchor="right" id="SciView" order="0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" x="42" y="337" width="1878" height="338" id="Debug" order="5" weight="0.39905548" />
@@ -358,7 +351,6 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Event Log" order="17" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="3" />
       <window_info active="true" anchor="bottom" id="Terminal" order="18" visible="true" weight="0.2927981" />
       <window_info id="Favorites" order="3" side_tool="true" />
     </layout>
@@ -382,13 +374,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -576,20 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es6.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="13135" column="4" selection-start-line="13135" selection-start-column="4" selection-end-line="13135" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../egret/SmartPikachu/SmartPikachuGit/SmartPikachu/SmartpikachuGame/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -625,13 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../egret/SmartPikachu/SmartPikachuGit/SmartPikachu/SmartpikachuGame/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1445">
@@ -655,16 +619,6 @@
     <entry file="file://$PROJECT_DIR$/src/canvas_geometry_birds/Boid.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Animate.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/App.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/DomTopic.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -675,23 +629,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/SecTimeCb.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Render.ts">
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Topic.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        <state relative-caret-position="187">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -702,10 +643,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Topic.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Render.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/SecTimeCb.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/canvas_geometry_birds/Main_birds.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="38" column="44" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="44" />
+        <state relative-caret-position="438">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/three.js-master/examples/canvas_geometry_birds.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="450" column="37" selection-start-line="450" selection-start-column="16" selection-end-line="450" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Animate.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es6.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="21728" column="17" selection-start-line="21728" selection-start-column="17" selection-end-line="21728" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/App.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="37" />
         </state>
       </provider>
     </entry>

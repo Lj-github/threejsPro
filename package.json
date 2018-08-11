@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --inline --open",
 
-    "build": "tsc",
+
+
+    "buildts": "tsc",
     "dev": "tsc -w",
     "prepare": "npm run build"
 

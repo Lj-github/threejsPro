@@ -15,6 +15,9 @@ var App;
         Animate.run();
     }
     App.run = run;
+    function runWindowFrame() {
+    }
+    App.runWindowFrame = runWindowFrame;
     App.randerType = 1; //0: canvas, 1 : webgl
     App.width = window.innerWidth;
     App.height = window.innerHeight;
