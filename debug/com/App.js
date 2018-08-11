@@ -7,8 +7,6 @@ var App;
         App.renderer = renderer;
         renderer.setSize(window.innerWidth, window.innerHeight);
         document.body.appendChild(renderer.domElement);
-        let axis = new THREE.AxesHelper(10);
-        scene.add(axis);
         App.setCamera();
         var mainGame = new game.Main_birds();
         mainGame.initUI();
