@@ -1,4 +1,4 @@
-
+window["game"] = game
 module game {
 
     export class Main_birds {
@@ -56,3 +56,4 @@ module game {
         }
     }
 }
+

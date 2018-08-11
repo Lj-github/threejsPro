@@ -27,11 +27,12 @@ module.exports = {
     devtool: 'source-map',
     entry: [
         './src/Main.ts',
-        './src/com/App.ts',
+        //'./src/com/App.ts',
+
     ],
     output: {
         path: __dirname + '/dist',
-        filename: 'Main.js'
+        filename: '[name].bundle.js'
     },
     module: {
         rules: [

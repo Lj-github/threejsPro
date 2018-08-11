@@ -1,6 +1,22 @@
+window["App"] = App
 
-module App {
+namespace App {
+    export function run() {
 
+        let scene = new THREE.Scene()
+        App.scene = scene
+        let renderer = new THREE.WebGLRenderer()
+        App.renderer = renderer
+        renderer.setSize(window.innerWidth, window.innerHeight)
+        document.body.appendChild(renderer.domElement)
+        let axis = new THREE.AxesHelper(10)
+        scene.add(axis)
+        App.setCamera()
+        var mainGame = new game.Main_birds()
+        mainGame.initUI()
+        Animate.run()
+
+    }
     export let renderer :THREE.WebGLRenderer
     export let randerType  = 1 //0: canvas, 1 : webgl
     export let scene:THREE.Scene
@@ -41,3 +57,4 @@ module App {
         camera.lookAt(App.scene.position)
     }
 }
+//window["App"] = App

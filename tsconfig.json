@@ -7,8 +7,9 @@
         "emitDecoratorMetadata": true,
         "preserveConstEnums": true,
         "suppressImplicitAnyIndexErrors": true,
-        "outDir": "./lib/",
-        "types": []
+        "outDir": "./debug",
+        "types": [],
+        "sourceMap": true
     },
     "awesomeTypescriptLoaderOptions": {
         "useWebpackText": true,
@@ -20,7 +21,7 @@
         "lib"
     ],
     "include": [
-        "src"
+        "src/**/*.ts"
     ],
     "compileOnSave": true,
     "buildOnSave": false
