@@ -55,7 +55,6 @@ def delDebugJS():
     pa = projectToolPath + "/" + "debug"
     allFi = GetFileList(projectToolPath + "/" + "debug",[])
     for f in allFi:
-        os.path.isdir(dir)
         os.remove(f)
     files = os.listdir(pa)  # 获取路径下的子文件(夹)列表
     for file in files:
@@ -66,11 +65,15 @@ def delDebugJS():
 
 
 def runApp():
-    delDebugJS()
     runShell = "npm start"
     os.system(runShell)
 
+def buildTS():
+    runShell = "tsc"
+    os.system(runShell)
 if __name__ == '__main__':
+    delDebugJS()
+    buildTS()
     buildJSJSON()
     runApp()
 
