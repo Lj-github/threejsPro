@@ -35,7 +35,7 @@ namespace App {
     export let renderer :THREE.WebGLRenderer
     export let randerType  = 1 //0: canvas, 1 : webgl
     export let scene:THREE.Scene
-    export let camera:THREE.PerspectiveCamera
+    export let camera:any//THREE.Camera
     export interface pos {
         x: number;
         y: number;
