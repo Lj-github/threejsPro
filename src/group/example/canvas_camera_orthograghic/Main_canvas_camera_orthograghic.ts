@@ -1,7 +1,11 @@
+
+
 module game{
+
+
     export class Main_canvas_camera_orthograghic{
         frustumSize = 1000;
-        //stats = new Stats();
+        stats = new Stats()
 
         constructor(){
         }

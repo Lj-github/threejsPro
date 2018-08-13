@@ -17,11 +17,12 @@
         "useCache": true
     },
     "exclude": [
-        "node_modules",
-        "lib"
+        "node_modules"
+
     ],
     "include": [
-        "src/**/*.ts"
+        "src/**/*.ts",
+        "lib"
     ],
     "compileOnSave": true,
     "buildOnSave": false

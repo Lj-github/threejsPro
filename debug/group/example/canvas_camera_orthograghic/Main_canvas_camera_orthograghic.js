@@ -1,9 +1,9 @@
 var game;
 (function (game) {
     class Main_canvas_camera_orthograghic {
-        //stats = new Stats();
         constructor() {
             this.frustumSize = 1000;
+            this.stats = new Stats();
         }
         initUI() {
             var aspect = window.innerWidth / window.innerHeight;

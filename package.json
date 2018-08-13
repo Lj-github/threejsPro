@@ -6,14 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --inline --open",
-
-
-
     "buildts": "tsc",
     "dev": "tsc -w",
     "prepare": "npm run build"
-
-
   },
   "keywords": [],
   "license": "MIT",
@@ -27,6 +22,7 @@
     "json-loader": "latest",
     "progress-bar-webpack-plugin": "latest",
     "style-loader": "latest",
+    "tern": "^0.21.0",
     "typescript": "latest",
     "webpack": "latest",
     "webpack-cli": "^2.0.14",

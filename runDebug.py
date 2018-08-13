@@ -39,14 +39,27 @@ def buildJSJSON():
     res = {}
     res["initial"] = []
     res["game"] = []
+
+    with open(jsonFIle, 'r') as f:
+        res["initial"] = json.load(f)["initial"]
+
+
     if len(allJSFIleList) > 0:
 
         for fil in allJSFIleList:
             fil = fil.replace(projectToolPath, "")
             res["game"].append(fil)
+    # libjsonFIle = "resource/LibJS.json"
+    # allLibJS = {}
+    # with open(libjsonFIle, 'r') as f:
+    #     allLibJS =  json.load(f)
+    # for fi in allLibJS["lib"]:
+    #     res["initial"].append(fi)
+    resStr =  json.dumps(res).replace("{","{\n").replace("}","}\n").replace("[","[\n").replace("]","]\n").replace(",",",\n")
 
     with open(jsonFIle, 'w') as f:
-        json.dump(res, f)
+        f.write(resStr)
+        #json.dump(res, f)
 
 def delDebugJS():
     print("delete js")
