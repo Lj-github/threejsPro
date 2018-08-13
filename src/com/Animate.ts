@@ -32,7 +32,16 @@ namespace Animate{
         item.tag = tag
         allRunTag.push(item)
     }
+    export function unRenderRunFunction(fun:Function,tar:any) {
+         allRunTag = allRunTag.filter((evt:allRunTagInfo)=>{
+            return evt.tag != tar && evt.fun != fun
+        })
 
-
+    }
+    export function unAllRenderRunFunctionByTarget(target:any) {
+        allRunTag = allRunTag.filter((evt)=>{
+            return evt.tag != target
+        })
+    }
 }
 

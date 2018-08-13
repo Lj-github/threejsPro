@@ -1,64 +1,63 @@
 // 方便管理页面内多个TimeOut
 module DomTopic{
-    interface domEvent {
-        cb:Function
-        cbTgt:any
-        dt:number
-        key:number
+    export interface domEvent {
+        fun:Function
+        tag:any
+        type:string
     }
+    export const mousemove = "mousemove"
+    export const resize = "resize"
     var arrayDomEvent:Array<domEvent> = []
     var allEventObj = {}
-    // export function startListen(){
-    //     document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-    //     window.addEventListener( 'resize', onWindowResize, false );
-    // }
-    // export function onDocumentMouseMove(event){
-    //
-    //     var mouseX = event.clientX
-    //     var mouseY = event.clientY
-    //
-    // }
-
-
-    export function scheduleOnce(callback:Function, cbTarget :any, dt:number) {
-        for (let element of arrayDomEvent) {
-            if (element.cb === callback) {
-                console.log('timeout exist!')
-                return
+    export function startListen(){
+        document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+        window.addEventListener( 'resize', onWindowResize, false );
+    }
+    export function onDocumentMouseMove(event){
+        // var pos = <any>{}
+        // pos.x = event.clientX
+        // pos.y = event.clientY
+        arrayDomEvent.forEach((evt:domEvent)=>{
+            if (evt.type == mousemove ){
+                evt.fun.call(evt.tag,event)
             }
-        }
-        let timeOutKey = window.setTimeout(()=> {
-            for (let i=0; i<arrayDomEvent.length; ++i) {
-                let element = arrayDomEvent[i]
-                if (element.cb === callback) {
-                    arrayDomEvent.splice(i, 1)
-                }
+        })
+
+    }
+    export function onWindowResize(event) {
+        // var pos = <any>{}
+        // pos.x = event.clientX
+        // pos.y = event.clientY
+        arrayDomEvent.forEach((evt:domEvent)=>{
+            if (evt.type == resize ){
+                evt.fun.call(event)
             }
-            callback.call(cbTarget)
-        }, cbTarget, dt)
-        arrayDomEvent.push({cb:callback,cbTgt:cbTarget, dt:dt, key:timeOutKey})
+        })
     }
 
-    export function unschedule(callback:Function, cbTarget) {
-        for (let i=0; i<arrayDomEvent.length; ++i) {
-            let element = arrayDomEvent[i]
-            if (element.cb === callback && element.cbTgt === cbTarget) {
-                window.clearTimeout(element.key)
-                arrayDomEvent.splice(i, 1)
-            }
-        }
+    export function addDomEventListener(type:string,fun:Function,target:any) {
+        var item = <domEvent>{}
+        item.type = type
+        item.fun = fun
+        item.tag = target
+        arrayDomEvent.push(item)
+
+    }
+    export function unRemoveDomEventListener(type:string,fun:Function,tar:any) {
+          arrayDomEvent = arrayDomEvent.filter((evt:domEvent)=>{
+            return evt.tag != tar && evt.fun != fun
+        })
     }
 
+    export function  unRemoveDomEventListenerByTarget(tar:any) {
+          arrayDomEvent = arrayDomEvent.filter((evt:domEvent)=>{
+            return evt.tag != tar
+        })
+    }
 
-    export function unscheduleAllOnTarget(target:any){
-        if (!target){
-            return
-        }
-        arrayDomEvent = arrayDomEvent.filter((evt)=>{
-            if (evt.cbTgt == target){
-                window.clearTimeout(evt.key)
-            }
-            return evt.cbTgt != target
+    export function  unRemoveDomEventListenerByType(type:string) {
+          arrayDomEvent = arrayDomEvent.filter((evt:domEvent)=>{
+            return evt.type != type
         })
     }
 

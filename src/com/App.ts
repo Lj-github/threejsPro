@@ -1,7 +1,6 @@
 
 namespace App {
     export function run() {
-
         let scene = new THREE.Scene()
         App.scene = scene
         let renderer = new THREE.WebGLRenderer()
@@ -9,10 +8,25 @@ namespace App {
         renderer.setSize(window.innerWidth, window.innerHeight)
         document.body.appendChild(renderer.domElement)
         App.setCamera()
-        var mainGame = new game.Main_birds()
-        mainGame.initUI()
         Animate.run()
+        DomTopic.startListen()
 
+
+        App.viewOther("Main_birds")
+
+    }
+    export let exampleTar :any
+
+    export function viewOther(className : string) {
+        if (exampleTar){
+            exampleTar.removeSelf()
+            exampleTar = undefined
+        }
+        var tar = new game[className]()
+        if (className){
+            exampleTar = tar
+            tar.initUI()
+        }
 
     }
     export function runWindowFrame(){
@@ -31,23 +45,7 @@ namespace App {
 
     export const height = window.innerHeight
 
-    /**
-     * Window 添加事件
-     * @param {string} uiEvent
-     * @param fun
-     */
-    export  function addWindowEventListener(uiEvent:string,fun:any,target:any){
-        window.addEventListener( uiEvent, fun, false );
-    }
 
-    /**
-     * Dom 添加事件
-     * @param {string} uiEvent
-     * @param fun
-     */
-    export function addDocumentEventListener(uiEvent:string,fun:any,options:Boolean){
-        document.addEventListener( uiEvent, fun, false );
-    }
 
     export function setCamera(fov?:number,aspect?:number,near?:number,far?:number,pos?:pos){
         let camera = new THREE.PerspectiveCamera(fov || 75, aspect || window.innerWidth / window.innerHeight, near || 0.1, far ||1000)

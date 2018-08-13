@@ -1,57 +1,61 @@
 // 方便管理页面内多个TimeOut
 var DomTopic;
 (function (DomTopic) {
+    DomTopic.mousemove = "mousemove";
+    DomTopic.resize = "resize";
     var arrayDomEvent = [];
     var allEventObj = {};
-    // export function startListen(){
-    //     document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-    //     window.addEventListener( 'resize', onWindowResize, false );
-    // }
-    // export function onDocumentMouseMove(event){
-    //
-    //     var mouseX = event.clientX
-    //     var mouseY = event.clientY
-    //
-    // }
-    function scheduleOnce(callback, cbTarget, dt) {
-        for (let element of arrayDomEvent) {
-            if (element.cb === callback) {
-                console.log('timeout exist!');
-                return;
-            }
-        }
-        let timeOutKey = window.setTimeout(() => {
-            for (let i = 0; i < arrayDomEvent.length; ++i) {
-                let element = arrayDomEvent[i];
-                if (element.cb === callback) {
-                    arrayDomEvent.splice(i, 1);
-                }
-            }
-            callback.call(cbTarget);
-        }, cbTarget, dt);
-        arrayDomEvent.push({ cb: callback, cbTgt: cbTarget, dt: dt, key: timeOutKey });
+    function startListen() {
+        document.addEventListener('mousemove', onDocumentMouseMove, false);
+        window.addEventListener('resize', onWindowResize, false);
     }
-    DomTopic.scheduleOnce = scheduleOnce;
-    function unschedule(callback, cbTarget) {
-        for (let i = 0; i < arrayDomEvent.length; ++i) {
-            let element = arrayDomEvent[i];
-            if (element.cb === callback && element.cbTgt === cbTarget) {
-                window.clearTimeout(element.key);
-                arrayDomEvent.splice(i, 1);
+    DomTopic.startListen = startListen;
+    function onDocumentMouseMove(event) {
+        // var pos = <any>{}
+        // pos.x = event.clientX
+        // pos.y = event.clientY
+        arrayDomEvent.forEach((evt) => {
+            if (evt.type == DomTopic.mousemove) {
+                evt.fun.call(evt.tag, event);
             }
-        }
-    }
-    DomTopic.unschedule = unschedule;
-    function unscheduleAllOnTarget(target) {
-        if (!target) {
-            return;
-        }
-        arrayDomEvent = arrayDomEvent.filter((evt) => {
-            if (evt.cbTgt == target) {
-                window.clearTimeout(evt.key);
-            }
-            return evt.cbTgt != target;
         });
     }
-    DomTopic.unscheduleAllOnTarget = unscheduleAllOnTarget;
+    DomTopic.onDocumentMouseMove = onDocumentMouseMove;
+    function onWindowResize(event) {
+        // var pos = <any>{}
+        // pos.x = event.clientX
+        // pos.y = event.clientY
+        arrayDomEvent.forEach((evt) => {
+            if (evt.type == DomTopic.resize) {
+                evt.fun.call(event);
+            }
+        });
+    }
+    DomTopic.onWindowResize = onWindowResize;
+    function addDomEventListener(type, fun, target) {
+        var item = {};
+        item.type = type;
+        item.fun = fun;
+        item.tag = target;
+        arrayDomEvent.push(item);
+    }
+    DomTopic.addDomEventListener = addDomEventListener;
+    function unRemoveDomEventListener(type, fun, tar) {
+        arrayDomEvent = arrayDomEvent.filter((evt) => {
+            return evt.tag != tar && evt.fun != fun;
+        });
+    }
+    DomTopic.unRemoveDomEventListener = unRemoveDomEventListener;
+    function unRemoveDomEventListenerByTarget(tar) {
+        arrayDomEvent = arrayDomEvent.filter((evt) => {
+            return evt.tag != tar;
+        });
+    }
+    DomTopic.unRemoveDomEventListenerByTarget = unRemoveDomEventListenerByTarget;
+    function unRemoveDomEventListenerByType(type) {
+        arrayDomEvent = arrayDomEvent.filter((evt) => {
+            return evt.type != type;
+        });
+    }
+    DomTopic.unRemoveDomEventListenerByType = unRemoveDomEventListenerByType;
 })(DomTopic || (DomTopic = {}));

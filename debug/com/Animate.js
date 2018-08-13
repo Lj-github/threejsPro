@@ -27,4 +27,16 @@ var Animate;
         allRunTag.push(item);
     }
     Animate.addRenderRunFunction = addRenderRunFunction;
+    function unRenderRunFunction(fun, tar) {
+        allRunTag = allRunTag.filter((evt) => {
+            return evt.tag != tar && evt.fun != fun;
+        });
+    }
+    Animate.unRenderRunFunction = unRenderRunFunction;
+    function unAllRenderRunFunctionByTarget(target) {
+        allRunTag = allRunTag.filter((evt) => {
+            return evt.tag != target;
+        });
+    }
+    Animate.unAllRenderRunFunctionByTarget = unAllRenderRunFunctionByTarget;
 })(Animate || (Animate = {}));

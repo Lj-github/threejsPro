@@ -56,9 +56,6 @@ xhr.addEventListener("load", function () {
 });
 xhr.send(null);
 
-
-
-
 /*****load js end   ****/
 
 

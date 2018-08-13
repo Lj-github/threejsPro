@@ -24,14 +24,18 @@ module game {
                 var bird = this.birds[i] = new THREE.Mesh( new Bird(), new THREE.MeshBasicMaterial( { color:Math.random() * 0xffffff, side: THREE.DoubleSide } ) );
                 bird["phase"] = Math.floor( Math.random() * 62.83 );
                 App.scene.add( bird );
-
-
             }
-            App.addDocumentEventListener( 'mousemove', this.onDocumentMouseMove, false)
-            App.addWindowEventListener('resize', this.onWindowResize, false)
+            DomTopic.addDomEventListener( DomTopic.mousemove, this.onDocumentMouseMove, this)
+            DomTopic.addDomEventListener(DomTopic.resize, this.onWindowResize, this)
             Animate.addRenderRunFunction(this.animate,this)
 
 
+        }
+        public removeSelf(){
+            for ( var i = 0; i < 200; i ++ ) {
+                var bird = this.birds[i]
+                App.scene.remove( bird );
+            }
         }
         public animate(){
 
@@ -59,22 +63,22 @@ module game {
         }
         public onDocumentMouseMove(event){
 
-            // var vector = new THREE.Vector3( event.clientX - App.width, - event.clientY + App.height, 0 );
-            //
-            // for ( var i = 0, il = this.boids.length; i < il; i++ ) {
-            //
-            //     var boid = this.boids[ i ];
-            //
-            //     vector.z = boid.position.z;
-            //
-            //     boid.repulse( vector );
-            // }
+            var vector = new THREE.Vector3( event.clientX - App.width, - event.clientY + App.height, 0 );
+
+            for ( var i = 0, il = this.boids.length; i < il; i++ ) {
+
+                var boid = this.boids[ i ];
+
+                vector.z = boid.position.z;
+
+                boid.repulse( vector );
+            }
 
 
         }
         private onWindowResize(){
             // App.camera.aspect = window.innerWidth / window.innerHeight;
-            // App.camera.updateProjectionMatrix();
+            App.camera.updateProjectionMatrix();
             //
             // App.renderer.setSize( window.innerWidth, window.innerHeight );
         }

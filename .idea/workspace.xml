@@ -3,19 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="64aa553e-368f-4cb2-89ca-9216c281d9ea" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/Main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/com/APPTimeOut.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/com/Animate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/com/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/com/DomTopic.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/com/Render.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/com/SecTimeCb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/com/Topic.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/group/example/canvas_geometry_birds/Bird.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/group/example/canvas_geometry_birds/Boid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/group/example/canvas_geometry_birds/Main_birds.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/JS.json" beforeDir="false" afterPath="$PROJECT_DIR$/resource/JS.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runDebug.py" beforeDir="false" afterPath="$PROJECT_DIR$/runDebug.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/com/Animate.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/com/Animate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/com/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/com/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/com/DomTopic.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/com/DomTopic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/group/example/canvas_geometry_birds/Main_birds.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/group/example/canvas_geometry_birds/Main_birds.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Animate.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Animate.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/App.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/App.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DomTopic.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DomTopic.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/group/example/canvas_geometry_birds/Main_birds.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/group/example/canvas_geometry_birds/Main_birds.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,32 +28,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="App.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/App.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+            <state relative-caret-position="80">
+              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="runDebug.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/runDebug.py">
+      <file leaf-file-name="DomTopic.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/DomTopic.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="72" column="12" lean-forward="true" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
-              <folding>
-                <element signature="e#90#99#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="151">
+              <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Animate.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/Animate.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -71,20 +64,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Animate.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/Animate.ts">
+      <file leaf-file-name="canvas_geometry_birds.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/three.js-master/examples/canvas_geometry_birds.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+            <state relative-caret-position="81">
+              <caret line="458" column="27" selection-start-line="458" selection-start-column="21" selection-end-line="458" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="canvas_geometry_birds.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/three.js-master/examples/canvas_geometry_birds.html">
+      <file leaf-file-name="canvas_camera_orthographic.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/three.js-master/examples/canvas_camera_orthographic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="458" column="27" selection-start-line="458" selection-start-column="21" selection-end-line="458" selection-end-column="27" />
+            <state relative-caret-position="187">
+              <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -98,20 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JS.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/JS.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main_birds.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main_birds.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/group/example/canvas_geometry_birds/Main_birds.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            <state relative-caret-position="186">
+              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
             </state>
           </provider>
         </entry>
@@ -138,6 +122,9 @@
       <find>boids</find>
       <find>BoidBoid</find>
       <find>requestAnimationFrame</find>
+      <find />
+      <find>buildts</find>
+      <find>startListen</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -152,7 +139,6 @@
         <option value="$PROJECT_DIR$/src/com/APPTimeOut.ts" />
         <option value="$PROJECT_DIR$/lib/tween/tsconfig.json" />
         <option value="$PROJECT_DIR$/lib/tween/package.json" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/resource/JS.json" />
@@ -162,11 +148,14 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/three.js-master/examples/canvas_geometry_birds.html" />
         <option value="$PROJECT_DIR$/src/canvas_geometry_birds/Main_birds.ts" />
+        <option value="$PROJECT_DIR$/src/com/Render.ts" />
+        <option value="$PROJECT_DIR$/runDebug.py" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Main.ts" />
         <option value="$PROJECT_DIR$/src/com/Animate.ts" />
-        <option value="$PROJECT_DIR$/src/com/Render.ts" />
+        <option value="$PROJECT_DIR$/src/group/example/canvas_geometry_birds/Main_birds.ts" />
         <option value="$PROJECT_DIR$/src/com/App.ts" />
-        <option value="$PROJECT_DIR$/runDebug.py" />
+        <option value="$PROJECT_DIR$/src/com/DomTopic.ts" />
       </list>
     </option>
   </component>
@@ -181,11 +170,11 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="4" />
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="107" />
+    <option name="y" value="28" />
     <option name="width" value="1920" />
-    <option name="height" value="979" />
+    <option name="height" value="981" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -206,7 +195,24 @@
             <path>
               <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
               <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="group" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
+              <item name="three.js-master" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -293,20 +299,22 @@
     <option name="totallyTimeSpent" value="22137000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1920" height="979" extended-state="6" />
+    <frame x="262" y="23" width="1920" height="981" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="13" />
       <window_info anchor="bottom" id="Event Log" order="17" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.2840512" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.28288707" />
       <window_info anchor="bottom" id="Version Control" order="19" weight="0.20372526" />
       <window_info anchor="bottom" id="Python Console" order="1" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="18" weight="0.29220024" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="18" visible="true" weight="0.19628339" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15282215" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" />
       <window_info anchor="right" id="SciView" order="0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3993015" />
@@ -317,7 +325,6 @@
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,20 +358,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/three.js-master/examples/canvas_geometry_birds.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7786">
-          <caret line="458" column="27" selection-start-line="458" selection-start-column="21" selection-end-line="458" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/group/example/canvas_geometry_birds/Main_birds.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -528,16 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="323">
-            <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
@@ -556,13 +539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -629,20 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/group/example/canvas_geometry_birds/Main_birds.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/SecTimeCb.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -650,38 +612,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Render.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/App.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resource/JS.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/three.js-master/examples/canvas_geometry_birds.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="458" column="27" selection-start-line="458" selection-start-column="21" selection-end-line="458" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Animate.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -692,13 +626,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="119">
+            <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/runDebug.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="72" column="12" lean-forward="true" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
+        <state relative-caret-position="212">
+          <caret line="67" column="26" lean-forward="true" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
           <folding>
             <element signature="e#90#99#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/three.js-master/examples/canvas_geometry_birds.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="458" column="27" selection-start-line="458" selection-start-column="21" selection-end-line="458" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/three.js-master/examples/canvas_camera_orthographic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Render.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Animate.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/App.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/DomTopic.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/group/example/canvas_geometry_birds/Main_birds.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
         </state>
       </provider>
     </entry>
