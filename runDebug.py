@@ -1,7 +1,9 @@
-# -*- coding: utf-8 -*-
-# @Time    : 2018/8/11 下午3:46
-
-"""  生成js list  用于 应用  """
+#!/usr/bin/python3
+# -*- coding: UTF-8 -*-
+"""
+生成js list  用于 应用
+"""
+#Time2018/8/11下午3:46
 
 import os
 import json
@@ -32,20 +34,39 @@ def buildJSJSON():
     filee = os.path.realpath(__file__)
     projectToolPath, projectToolName = os.path.split(filee)
 
-    print "build js json begin"
+    print("build js json begin")
     allJSFIleList = getExcludeByFileType("js", projectToolPath + "/" + allJSFile)
     res = {}
     res["initial"] = []
     res["game"] = []
     if len(allJSFIleList) > 0:
-        print ""
+
         for fil in allJSFIleList:
             fil = fil.replace(projectToolPath, "")
             res["game"].append(fil)
 
     with open(jsonFIle, 'w') as f:
         json.dump(res, f)
+
+def delDebugJS():
+    print("delete js")
+    filee = os.path.realpath(__file__)
+    projectToolPath, projectToolName = os.path.split(filee)
+    pa = projectToolPath + "/" + "debug"
+    allFi = GetFileList(projectToolPath + "/" + "debug",[])
+    for f in allFi:
+        os.path.isdir(dir)
+        os.remove(f)
+    files = os.listdir(pa)  # 获取路径下的子文件(夹)列表
+    for file in files:
+        newDir = os.path.join(pa, file)
+        if os.path.isdir(newDir):  # 如果是文件夹
+            if not os.listdir(newDir):  # 如果子文件为空
+                os.rmdir(newDir)  # 删除这个空文件夹
+
+
 def runApp():
+    delDebugJS()
     runShell = "npm start"
     os.system(runShell)
 
