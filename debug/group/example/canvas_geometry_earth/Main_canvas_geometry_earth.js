@@ -1,12 +1,17 @@
 var game;
 (function (game) {
     class Main_canvas_geometry_earth {
-        constructor() { }
+        constructor() {
+            this.mouseX = 0;
+            this.mouseY = 0;
+            this.windowHalfY = window.innerHeight / 2;
+            this.windowHalfX = window.innerWidth / 2;
+        }
         initUI() {
-            App.camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 2000);
+            //App.camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 1, 2000 );
             App.camera.position.z = 500;
-            App.camera.position.x = 500;
-            App.camera.position.y = 500;
+            App.camera.position.x = 0;
+            App.camera.position.y = 0;
             App.scene.background = new THREE.Color(0xffffff);
             var group = new THREE.Group();
             App.scene.add(group);
@@ -39,7 +44,6 @@ var game;
             App.renderer.setPixelRatio(window.devicePixelRatio);
             App.renderer.setSize(window.innerWidth, window.innerHeight);
             DomTopic.addDomEventListener('mousemove', this.onDocumentMouseMove, this);
-            //
             DomTopic.addDomEventListener('resize', this.onWindowResize, this);
             Animate.addRenderRunFunction(this.animate, this);
         }

@@ -1,18 +1,18 @@
 module game{
     export class Main_canvas_geometry_earth {
-        mouseX
+        mouseX = 0
         clientX
-        mouseY
-        windowHalfY
-        windowHalfX
+        mouseY= 0;
+        windowHalfY  = window.innerHeight / 2;
+        windowHalfX =  window.innerWidth / 2;
         group:THREE.Group
+
         constructor(){}
         initUI(){
-
-            App.camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 1, 2000 );
+            //App.camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 1, 2000 );
             App.camera.position.z = 500;
-            App.camera.position.x = 500;
-            App.camera.position.y = 500;
+            App.camera.position.x = 0;
+            App.camera.position.y = 0;
             App.scene.background = new THREE.Color( 0xffffff );
 
             var group = new THREE.Group();
@@ -22,13 +22,10 @@ module game{
 
             var loader = new THREE.TextureLoader();
             loader.load( 'three.js-master/examples/textures/land_ocean_ice_cloud_2048.jpg', function ( texture ) {
-
                 var geometry = new THREE.SphereGeometry( 200, 20, 20 );
-
                 var material = new THREE.MeshBasicMaterial( { map: texture, overdraw: 0.5 } );
                 var mesh = new THREE.Mesh( geometry, material );
                 group.add( mesh );
-
             } );
 
             // shadow
@@ -65,7 +62,6 @@ module game{
             App.renderer.setPixelRatio( window.devicePixelRatio );
             App.renderer.setSize( window.innerWidth, window.innerHeight );
             DomTopic.addDomEventListener( 'mousemove', this.onDocumentMouseMove, this );
-            //
             DomTopic.addDomEventListener( 'resize', this.onWindowResize, this );
             Animate.addRenderRunFunction(this.animate, this)
         }
@@ -84,15 +80,15 @@ module game{
 
         }
         public onDocumentMouseMove(event){
-                this.mouseX = ( event.clientX - this.windowHalfX );
-				this.mouseY = ( event.clientY - this.windowHalfY );
+            this.mouseX = ( event.clientX - this.windowHalfX );
+            this.mouseY = ( event.clientY - this.windowHalfY );
         }
         public animate(){
-            	App.camera.position.x += ( this.mouseX - App.camera.position.x ) * 0.05;
-				App.camera.position.y += ( - this.mouseY - App.camera.position.y ) * 0.05;
-				App.camera.lookAt( App.scene.position );
-				this.group.rotation.y -= 0.005;
-                App.renderer.render( App.scene, App.camera );
+            App.camera.position.x += ( this.mouseX - App.camera.position.x ) * 0.05;
+            App.camera.position.y += ( - this.mouseY - App.camera.position.y ) * 0.05;
+            App.camera.lookAt( App.scene.position );
+            this.group.rotation.y -= 0.005;
+            App.renderer.render( App.scene, App.camera );
         }
     }
 }
