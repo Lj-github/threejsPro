@@ -65,9 +65,7 @@ module game{
             DomTopic.addDomEventListener( 'resize', this.onWindowResize, this );
             Animate.addRenderRunFunction(this.animate, this)
         }
-        removeSelf(){
 
-        }
 
         public onWindowResize(){
             this.windowHalfX = window.innerWidth / 2;
@@ -88,7 +86,6 @@ module game{
             App.camera.position.y += ( - this.mouseY - App.camera.position.y ) * 0.05;
             App.camera.lookAt( App.scene.position );
             this.group.rotation.y -= 0.005;
-            App.renderer.render( App.scene, App.camera );
         }
     }
 }

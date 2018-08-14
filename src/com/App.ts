@@ -17,7 +17,14 @@ namespace App {
 
     export function viewOther(className : string) {
         if (exampleTar){
-            exampleTar.removeSelf()
+            if (exampleTar.removeSelf){
+                exampleTar.removeSelf()
+            }else {
+                for (var obj of App.scene.children) {
+                    App.scene.remove(obj)
+                }
+            }
+
             exampleTar = undefined
         }
         var tar = new game[className]()

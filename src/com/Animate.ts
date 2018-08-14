@@ -13,6 +13,7 @@ namespace Animate{
          allRunTag.forEach((evt:allRunTagInfo)=>{
              evt.fun.call(evt.tag)
         })
+
         requestAnimationFrame(Animate.run)
     }
      export function start() {

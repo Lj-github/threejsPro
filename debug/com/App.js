@@ -15,7 +15,14 @@ var App;
     App.run = run;
     function viewOther(className) {
         if (App.exampleTar) {
-            App.exampleTar.removeSelf();
+            if (App.exampleTar.removeSelf) {
+                App.exampleTar.removeSelf();
+            }
+            else {
+                for (var obj of App.scene.children) {
+                    App.scene.remove(obj);
+                }
+            }
             App.exampleTar = undefined;
         }
         var tar = new game[className]();

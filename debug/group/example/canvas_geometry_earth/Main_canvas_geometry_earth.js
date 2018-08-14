@@ -47,8 +47,6 @@ var game;
             DomTopic.addDomEventListener('resize', this.onWindowResize, this);
             Animate.addRenderRunFunction(this.animate, this);
         }
-        removeSelf() {
-        }
         onWindowResize() {
             this.windowHalfX = window.innerWidth / 2;
             this.windowHalfY = window.innerHeight / 2;
@@ -65,7 +63,6 @@ var game;
             App.camera.position.y += (-this.mouseY - App.camera.position.y) * 0.05;
             App.camera.lookAt(App.scene.position);
             this.group.rotation.y -= 0.005;
-            App.renderer.render(App.scene, App.camera);
         }
     }
     game.Main_canvas_geometry_earth = Main_canvas_geometry_earth;
