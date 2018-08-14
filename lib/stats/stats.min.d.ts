@@ -80,6 +80,13 @@ declare interface Ret {
 	 * 
 	 */
 	setMode : /* Stats.!ret.showPanel */ any;
+
+
+	/**
+	 *change by liujiang
+	 */
+	dom:any;
+
 }
 /**
  * 

@@ -10,7 +10,7 @@ var App;
         App.setCamera();
         Animate.run();
         DomTopic.startListen();
-        App.viewOther("Main_birds");
+        //App.renderer.render( App.scene, App.camera );
     }
     App.run = run;
     function viewOther(className) {
@@ -28,6 +28,11 @@ var App;
     function runWindowFrame() {
     }
     App.runWindowFrame = runWindowFrame;
+    function showFPS() {
+        var stats = new Stats();
+        document.body.appendChild(stats.dom); //fps
+    }
+    App.showFPS = showFPS;
     App.randerType = 1; //0: canvas, 1 : webgl
     App.width = window.innerWidth;
     App.height = window.innerHeight;

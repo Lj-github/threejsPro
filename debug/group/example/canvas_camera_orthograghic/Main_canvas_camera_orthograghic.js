@@ -3,7 +3,6 @@ var game;
     class Main_canvas_camera_orthograghic {
         constructor() {
             this.frustumSize = 1000;
-            this.stats = new Stats();
         }
         initUI() {
             var aspect = window.innerWidth / window.innerHeight;
@@ -41,8 +40,6 @@ var game;
             App.scene.add(directionalLight);
             App.renderer.setPixelRatio(window.devicePixelRatio);
             App.renderer.setSize(window.innerWidth, window.innerHeight);
-            // var stats = new Stats();
-            // container.appendChild( stats.dom );
             //
             DomTopic.addDomEventListener(DomTopic.resize, this.onWindowResize, this);
             Animate.addRenderRunFunction(this.animate, this);
@@ -57,6 +54,11 @@ var game;
             App.renderer.setSize(window.innerWidth, window.innerHeight);
         }
         removeSelf() {
+            var allChildren = App.scene.children;
+            for (var obj of App.scene.children) {
+                App.scene.remove(obj);
+            }
+            this.frustumSize = undefined;
             //App.scene.remove()
         }
         animate() {

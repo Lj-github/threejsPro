@@ -10,9 +10,7 @@ namespace App {
         App.setCamera()
         Animate.run()
         DomTopic.startListen()
-
-
-        App.viewOther("Main_birds")
+        //App.renderer.render( App.scene, App.camera );
 
     }
     export let exampleTar :any
@@ -31,6 +29,11 @@ namespace App {
     }
     export function runWindowFrame(){
 
+    }
+
+    export function showFPS(){
+        var stats = new Stats();
+        document.body.appendChild( stats.dom );//fps
     }
     export let renderer :THREE.WebGLRenderer
     export let randerType  = 1 //0: canvas, 1 : webgl

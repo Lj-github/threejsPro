@@ -11,6 +11,8 @@
  "/debug/group/example/canvas_geometry_birds/Bird.js",
  "/debug/group/example/canvas_geometry_birds/Boid.js",
  "/debug/group/example/canvas_geometry_birds/Main_birds.js",
+ "/debug/group/example/canvas_geometry_earth/Main_canvas_geometry_earth.js",
+ "/debug/group/ExpConfig.js",
  "/debug/Main.js"]
 ,
  "initial": [
