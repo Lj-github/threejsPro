@@ -3,14 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="64aa553e-368f-4cb2-89ca-9216c281d9ea" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debug/com/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/com/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debug/group/ExpConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/group/ExpConfig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/group/example/canvas_geometry_earth/Main_canvas_geometry_earth.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/group/example/canvas_geometry_earth/Main_canvas_geometry_earth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/dat/dat.gui.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/dat/dat.gui.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resource/JS.json" beforeDir="false" afterPath="$PROJECT_DIR$/resource/JS.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Animate.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Animate.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/App.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/App.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/group/ExpConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/group/ExpConfig.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/group/example/canvas_geometry_earth/Main_canvas_geometry_earth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/group/example/canvas_geometry_earth/Main_canvas_geometry_earth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/group/example/webgl_animation_skinning_morph/Main_webgl_animation_skinning_morph.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/group/example/webgl_animation_skinning_morph/Main_webgl_animation_skinning_morph.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,27 +23,36 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/threejsPro$runDebug.coverage" NAME="runDebug Coverage Results" MODIFIED="1534247285727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/threejsPro$runDebug.coverage" NAME="runDebug Coverage Results" MODIFIED="1534321924951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="canvas_geometry_hierarchy.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/group/example/canvas_geometry_hierarchy/canvas_geometry_hierarchy.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="527">
-                <caret line="31" column="2" lean-forward="true" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
+              <first_editor relative-caret-position="187">
+                <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main_webgl_animation_skinning_morph.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/group/example/webgl_animation_skinning_morph/Main_webgl_animation_skinning_morph.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="515">
+              <caret line="205" column="47" lean-forward="true" selection-start-line="205" selection-start-column="47" selection-end-line="205" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gui_webgl_animation_skinning_morph.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/group/example/webgl_animation_skinning_morph/Gui_webgl_animation_skinning_morph.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -51,54 +60,26 @@
       <file leaf-file-name="webgl_animation_skinning_morph.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/three.js-master/examples/webgl_animation_skinning_morph.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="246" column="61" lean-forward="true" selection-start-line="246" selection-start-column="61" selection-end-line="246" selection-end-column="61" />
-              <folding>
-                <element signature="e#6956#11978#0" />
-                <element signature="e#12230#13347#0" />
-              </folding>
+            <state relative-caret-position="5263">
+              <caret line="636" column="30" lean-forward="true" selection-start-line="636" selection-start-column="30" selection-end-line="636" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main_webgl_animation_skinning_morph.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/group/example/webgl_animation_skinning_morph/Main_webgl_animation_skinning_morph.ts">
+      <file leaf-file-name="App.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/App.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="147" column="28" selection-start-line="147" selection-start-column="28" selection-end-line="147" selection-end-column="28" />
+            <state relative-caret-position="51">
+              <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stats.min.d.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/stats/stats.min.d.ts">
+      <file leaf-file-name="Animate.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/Animate.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dat.gui.d.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/dat/dat.gui.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-14437">
-              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dat.gui.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/dat/dat.gui.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="1549" column="51" lean-forward="true" selection-start-line="1549" selection-start-column="51" selection-end-line="1549" selection-end-column="51" />
+            <state relative-caret-position="153">
+              <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -106,8 +87,26 @@
       <file leaf-file-name="Main_canvas_geometry_earth.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/group/example/canvas_geometry_earth/Main_canvas_geometry_earth.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="23" column="51" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="51" />
+            <state relative-caret-position="117">
+              <caret line="65" column="60" lean-forward="true" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Loader.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/Loader.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExpConfig.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/group/ExpConfig.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -124,18 +123,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>boids</find>
-      <find>BoidBoid</find>
-      <find>requestAnimationFrame</find>
-      <find>Access URLs:</find>
-      <find>buildts</find>
-      <find>startListen</find>
-      <find>frustumSize</find>
-      <find>setPixelRatio</find>
-      <find>Stats</find>
       <find>dom</find>
       <find>stats</find>
-      <find>container</find>
       <find>mouseX</find>
       <find>windowHalfX</find>
       <find>files</find>
@@ -153,7 +142,17 @@
       <find>parent</find>
       <find>namespace dat</find>
       <find>RecalculateRGB0</find>
-      <find>dat.GUI</find>
+      <find>odels/skinned/knight.js</find>
+      <find>...</find>
+      <find>render</find>
+      <find>initGUI</find>
+      <find>container</find>
+      <find>renderer.gammaInput</find>
+      <find>mesh</find>
+      <find>createScene</find>
+      <find>facesClip</find>
+      <find>WebGLRenderer</find>
+      <find>mixer</find>
     </findStrings>
     <replaceStrings>
       <replace>GUI</replace>
@@ -186,15 +185,12 @@
         <option value="$PROJECT_DIR$/resource/libJS.json" />
         <option value="$PROJECT_DIR$/resource/LibJS.json" />
         <option value="$PROJECT_DIR$/runDebug.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lib/stats/stats.min.js" />
         <option value="$PROJECT_DIR$/lib/stats/stats.min.d.ts" />
         <option value="$PROJECT_DIR$/src/group/example/canvas_camera_orthograghic/Main_canvas_camera_orthograghic.ts" />
-        <option value="$PROJECT_DIR$/src/com/App.ts" />
         <option value="$PROJECT_DIR$/three.js-master/examples/canvas_geometry_hierarchy.html" />
         <option value="$PROJECT_DIR$/src/group/example/canvas_geometry_earth/Main_canvas_geometry_earth.ts" />
         <option value="$PROJECT_DIR$/src/com/Animate.ts" />
-        <option value="$PROJECT_DIR$/src/group/ExpConfig.ts" />
         <option value="$PROJECT_DIR$/src/group/example/canvas_geometry_hierarchy/canvas_geometry_hierarchy.ts" />
         <option value="$PROJECT_DIR$/resource/JS.json" />
         <option value="$PROJECT_DIR$/lib/dat/README.md" />
@@ -202,6 +198,12 @@
         <option value="$PROJECT_DIR$/lib/tween/README.md" />
         <option value="$PROJECT_DIR$/lib/stats/README.md" />
         <option value="$PROJECT_DIR$/lib/dat/dat.gui.d.ts" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/group/ExpConfig.ts" />
+        <option value="$PROJECT_DIR$/src/com/Loader.ts" />
+        <option value="$PROJECT_DIR$/three.js-master/examples/webgl_animation_skinning_morph.html" />
+        <option value="$PROJECT_DIR$/src/com/App.ts" />
+        <option value="$PROJECT_DIR$/src/group/example/webgl_animation_skinning_morph/Gui_webgl_animation_skinning_morph.ts" />
         <option value="$PROJECT_DIR$/src/group/example/webgl_animation_skinning_morph/Main_webgl_animation_skinning_morph.ts" />
       </list>
     </option>
@@ -218,8 +220,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="84" />
-    <option name="y" value="133" />
+    <option name="x" value="46" />
+    <option name="y" value="47" />
     <option name="width" value="1920" />
     <option name="height" value="979" />
   </component>
@@ -248,12 +250,6 @@
               <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
               <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="dat" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
@@ -326,7 +322,15 @@
               <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
               <item name="three.js-master" type="462c0819:PsiDirectoryNode" />
               <item name="examples" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
+              <item name="three.js-master" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="skinned" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -422,14 +426,15 @@
       <window_info anchor="bottom" id="Event Log" order="17" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.3434226" />
-      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="19" weight="0.20372526" />
       <window_info anchor="bottom" id="Python Console" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="18" visible="true" weight="0.11175786" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="18" visible="true" weight="0.15948778" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21086262" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15814696" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" />
       <window_info anchor="right" id="SciView" order="0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3993015" />
@@ -440,7 +445,6 @@
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,7 +462,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -561,13 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es6.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="20749" column="13" selection-start-line="20749" selection-start-column="13" selection-end-line="20749" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -582,20 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Animate.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/App.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
@@ -607,13 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="41" column="68" selection-start-line="41" selection-start-column="68" selection-end-line="41" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/group/ExpConfig.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -645,19 +621,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/three.js-master/examples/js/libs/dat.gui.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/dat/dat.gui.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/runDebug.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
           <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-          <folding>
-            <element signature="e#90#99#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -668,16 +635,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/dat/dat.gui.min.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dat/dat.gui.min.d.ts" />
     <entry file="file://$PROJECT_DIR$/resource/JS.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -699,9 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -735,70 +690,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Detector/Detector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/three.js-master/examples/js/Detector.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/group/example/canvas_geometry_earth/Main_canvas_geometry_earth.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="23" column="51" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/group/example/canvas_geometry_hierarchy/canvas_geometry_hierarchy.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="527">
-            <caret line="31" column="2" lean-forward="true" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/three/three-core.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="275" column="11" selection-start-line="275" selection-start-column="11" selection-end-line="275" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/three.js-master/examples/webgl_animation_skinning_morph.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="246" column="61" lean-forward="true" selection-start-line="246" selection-start-column="61" selection-end-line="246" selection-end-column="61" />
-          <folding>
-            <element signature="e#6956#11978#0" />
-            <element signature="e#12230#13347#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -816,37 +711,118 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/dat/dat.gui.js">
+    <entry file="file://$PROJECT_DIR$/lib/dat/dat.gui.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="1549" column="51" lean-forward="true" selection-start-line="1549" selection-start-column="51" selection-end-line="1549" selection-end-column="51" />
+        <state relative-caret-position="-661">
+          <caret line="45" column="18" lean-forward="true" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/stats/stats.min.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="-661">
+          <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dat/dat.gui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1392">
+          <caret line="1549" column="51" selection-start-line="1549" selection-start-column="51" selection-end-line="1549" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/group/example/canvas_geometry_hierarchy/canvas_geometry_hierarchy.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="187">
+            <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/three.js-master/examples/models/skinned/knight.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-205">
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es6.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="277" column="4" selection-start-line="277" selection-start-column="4" selection-end-line="277" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Loader.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/group/ExpConfig.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/group/example/canvas_geometry_earth/Main_canvas_geometry_earth.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="65" column="60" lean-forward="true" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Animate.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/three/three-core.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="280" column="25" lean-forward="true" selection-start-line="280" selection-start-column="25" selection-end-line="280" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/App.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/three.js-master/examples/webgl_animation_skinning_morph.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5263">
+          <caret line="636" column="30" lean-forward="true" selection-start-line="636" selection-start-column="30" selection-end-line="636" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/group/example/webgl_animation_skinning_morph/Gui_webgl_animation_skinning_morph.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/group/example/webgl_animation_skinning_morph/Main_webgl_animation_skinning_morph.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="147" column="28" selection-start-line="147" selection-start-column="28" selection-end-line="147" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/dat/dat.gui.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14437">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="515">
+          <caret line="205" column="47" lean-forward="true" selection-start-line="205" selection-start-column="47" selection-end-line="205" selection-end-column="47" />
         </state>
       </provider>
     </entry>

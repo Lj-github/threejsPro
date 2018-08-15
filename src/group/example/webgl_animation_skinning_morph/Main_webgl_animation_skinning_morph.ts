@@ -24,8 +24,17 @@ module game {
         showMemInfo = false;
 		constructor() { }
 		public initUI() {
+			App.camera = undefined
+			App.camera = new THREE.PerspectiveCamera( 30, this.SCREEN_WIDTH / this.SCREEN_HEIGHT, 1, 10000 );
+
+			App.scene = undefined
+			App.scene = new THREE.Scene();
+
+
 			App.camera.position.z = 2200;
-			App.scene.background = new THREE.Color(0xffffff);
+
+			//App.scene.background = new THREE.Color(0xffffff);
+
 			App.scene.fog = new THREE.Fog(0xffffff, 2000, 10000);
 			// GROUND
 			var geometry = new THREE.PlaneBufferGeometry(16000, 16000);
@@ -51,7 +60,6 @@ module game {
 			light.shadow.camera.bottom = -d;
 			light.shadow.camera.far = 3500;
 			// RENDERER
-			App.renderer = new THREE.WebGLRenderer({ antialias: true });
 			App.renderer.setPixelRatio(window.devicePixelRatio);
 			App.renderer.setSize(this.SCREEN_WIDTH, this.SCREEN_HEIGHT);
 			App.renderer.domElement.style.position = "relative";
@@ -60,14 +68,18 @@ module game {
 			App.renderer.shadowMap.enabled = true;
 			// STATS
 			//
-			var loader = new THREE.JSONLoader();
-			loader.load("models/skinned/knight.js", function (geometry, materials) {
-				this.createScene(geometry, materials, 0, this.FLOOR, -300, 60);
-				// GUI
-				this.initGUI();
-			});
+			App.Loader("three.js-master/examples/models/skinned/knight.js",this.loadSuccess,this)
+			// var loader = new THREE.JSONLoader();
+			// loader.load( this.loadSuccess);
 			//
 			DomTopic.addDomEventListener('resize', this.onWindowResize, this);
+			Animate.addRenderRunFunction(this.animate, this)
+		}
+
+		public loadSuccess(geometry, materials){
+			this.createScene(geometry, materials, 0, this.FLOOR, -300, 60);
+			// GUI
+			this.initGUI();
 		}
 		onWindowResize() {
 			this.windowHalfX = window.innerWidth / 2;
@@ -81,13 +93,13 @@ module game {
 			//ensureLoop( geometry.animation );
 			geometry.computeBoundingBox();
 			var bb = geometry.boundingBox;
-			var path = "three.js-master/examples/textures/cube/Park2/";
-			var format = '.jpg';
-			var urls = [
-				path + 'posx' + format, path + 'negx' + format,
-				path + 'posy' + format, path + 'negy' + format,
-				path + 'posz' + format, path + 'negz' + format
-			];
+			// var path = "three.js-master/examples/textures/cube/Park2/";
+			// var format = '.jpg';
+			// var urls = [
+			// 	path + 'posx' + format, path + 'negx' + format,
+			// 	path + 'posy' + format, path + 'negy' + format,
+			// 	path + 'posz' + format, path + 'negz' + format
+			// ];
 
 			for (var i = 0; i < materials.length; i++) {
 
@@ -122,14 +134,14 @@ module game {
 			this.mesh2.position.set(x - 240, y - bb.min.y * s, z + 500);
 			this.mesh2.scale.set(s / 2, s / 2, s / 2);
 			this.mesh2.rotation.y = THREE.Math.degToRad(60);
-			this.mesh2.visible = false;
+			//this.mesh2.visible = false;
 			this.mesh2.castShadow = true;
 			this.mesh2.receiveShadow = true;
 			App.scene.add(this.mesh2);
 
 			this.helper = new THREE.SkeletonHelper(this.mesh);
 			this.helper.material.linewidth = 3;
-			this.helper.visible = false;
+			//this.helper.visible = false;
 			App.scene.add(this.helper);
 
 			this.mixer = new THREE.AnimationMixer(this.mesh);
@@ -137,7 +149,30 @@ module game {
 			this.bonesClip = geometry.animations[0];
 			this.facesClip = THREE.AnimationClip.CreateFromMorphTargetSequence('facialExpressions', this.mesh.geometry.morphTargets, 3,false);
 		}
+
+
+
+
+		onDocumentMouseMove(event) {
+
+			this.mouseX = (event.clientX - this.windowHalfX);
+			this.mouseY = (event.clientY - this.windowHalfY);
+
+		}
+		animate() {
+			var delta = 0.75 * this.clock.getDelta();
+			App.camera.position.x += (this.mouseX - App.camera.position.x) * .05;
+			App.camera.position.y = THREE.Math.clamp(App.camera.position.y + (- this.mouseY - App.camera.position.y) * .05, 0, 1000);
+			App.camera.lookAt(App.scene.position);
+			if (this.mixer) {
+				this.mixer.update(delta);
+			}
+		}
+
+
+
 		initGUI() {
+			var _it  =  this
 			var API = {
 				'show model': true,
 				'show skeleton': false,
@@ -145,24 +180,23 @@ module game {
 				'show mem. info': false
 			};
 
-				//TODO GUI.d.ts  有问题 待解决
 			var gui = new dat.GUI();
 
 			gui.add(API, 'show model').onChange(function () {
-				this.mesh.visible = API['show model'];
+				_it.mesh.visible = API['show model'];
 			});
 
 			gui.add(API, 'show skeleton').onChange(function () {
-				helper.visible = API['show skeleton'];
+				_it.helper.visible = API['show skeleton'];
 			});
 
 			gui.add(API, 'show 2nd model').onChange(function () {
-				mesh2.visible = API['show 2nd model'];
+				_it.mesh2.visible = API['show 2nd model'];
 			});
 			gui.add(API, 'show mem. info').onChange(function () {
 
-				showMemInfo = API['show mem. info'];
-				domMemInfo.style.display = showMemInfo ? 'block' : 'none';
+				_it.showMemInfo = API['show mem. info'];
+				// _it.domMemInfo.style.display = _it.showMemInfo ? 'block' : 'none';
 			});
 
 			// utility function used for drop-down options lists in the GUI
@@ -190,21 +224,21 @@ module game {
 
 						'play()': function play() {
 
-							action = mixer.clipAction(clip, root);
+							action = _it.mixer.clipAction(clip, root);
 							action.play();
 
 						},
 
 						'stop()': function () {
 
-							action = mixer.clipAction(clip, root);
+							action = _it.mixer.clipAction(clip, root);
 							action.stop();
 
 						},
 
 						'reset()': function () {
 
-							action = mixer.clipAction(clip, root);
+							action = _it.mixer.clipAction(clip, root);
 							action.reset();
 
 						},
@@ -217,7 +251,7 @@ module game {
 
 						set 'time ='(value) {
 
-							action = mixer.clipAction(clip, root);
+							action = _it.mixer.clipAction(clip, root);
 							action.time = value;
 
 						},
@@ -230,7 +264,7 @@ module game {
 
 						set 'paused ='(value) {
 
-							action = mixer.clipAction(clip, root);
+							action = _it.mixer.clipAction(clip, root);
 							action.paused = value;
 
 						},
@@ -243,7 +277,7 @@ module game {
 
 						set 'enabled ='(value) {
 
-							action = mixer.clipAction(clip, root);
+							action = _it.mixer.clipAction(clip, root);
 							action.enabled = value;
 
 						},
@@ -256,7 +290,7 @@ module game {
 
 						set 'clamp ='(value) {
 
-							action = mixer.clipAction(clip, root);
+							action = _it.mixer.clipAction(clip, root);
 							action.clampWhenFinished = value;
 
 						},
@@ -275,8 +309,8 @@ module game {
 
 						'play delayed': function () {
 
-							action = mixer.clipAction(clip, root);
-							action.startAt(mixer.time + 0.5).play();
+							action = _it.mixer.clipAction(clip, root);
+							action.startAt(_it.mixer.time + 0.5).play();
 
 						},
 
@@ -288,7 +322,7 @@ module game {
 
 						set 'weight ='(value) {
 
-							action = mixer.clipAction(clip, root);
+							action = _it.mixer.clipAction(clip, root);
 							action.weight = value;
 
 						},
@@ -301,21 +335,21 @@ module game {
 
 						set 'eff. weight'(value) {
 
-							action = mixer.clipAction(clip, root);
+							action = _it.mixer.clipAction(clip, root);
 							action.setEffectiveWeight(value);
 
 						},
 
 						'fade in': function () {
 
-							action = mixer.clipAction(clip, root);
+							action = _it.mixer.clipAction(clip, root);
 							action.reset().fadeIn(0.25).play();
 
 						},
 
 						'fade out': function () {
 
-							action = mixer.clipAction(clip, root);
+							action = _it.mixer.clipAction(clip, root);
 							action.fadeOut(0.25).play();
 
 						},
@@ -328,7 +362,7 @@ module game {
 
 						set 'timeScale ='(value) {
 
-							action = mixer.clipAction(clip, root);
+							action = _it.mixer.clipAction(clip, root);
 							action.timeScale = value;
 
 						},
@@ -341,14 +375,14 @@ module game {
 
 						set 'eff.T.Scale'(value) {
 
-							action = mixer.clipAction(clip, root);
+							action = _it.mixer.clipAction(clip, root);
 							action.setEffectiveTimeScale(value);
 
 						},
 
 						'time warp': function () {
 
-							action = mixer.clipAction(clip, root);
+							action = _it.mixer.clipAction(clip, root);
 							var timeScaleNow = action.getEffectiveTimeScale();
 							var destTimeScale = timeScaleNow > 0 ? -1 : 1;
 							action.warp(timeScaleNow, destTimeScale, 4).play();
@@ -363,7 +397,7 @@ module game {
 
 						set 'loop mode'(value) {
 
-							action = mixer.clipAction(clip, root);
+							action = _it.mixer.clipAction(clip, root);
 							action.loop = + value;
 
 						},
@@ -376,7 +410,7 @@ module game {
 
 						set 'repetitions'(value) {
 
-							action = mixer.clipAction(clip, root);
+							action = _it.mixer.clipAction(clip, root);
 							action.repetitions = + value;
 
 						},
@@ -387,7 +421,7 @@ module game {
 
 							rootName = value;
 							root = rootObjects[rootNames.indexOf(rootName)];
-							action = mixer.clipAction(clip, root);
+							action = _it.mixer.clipAction(clip, root);
 
 						}
 
@@ -421,8 +455,8 @@ module game {
 			}; // function clipControl
 
 			// one folder per clip
-			clipControl(gui, mixer, bonesClip, [null, mesh, mesh2]);
-			clipControl(gui, mixer, facesClip, [null, mesh, mesh2]);
+			clipControl(gui, this.mixer, this.bonesClip, [null, this.mesh, this.mesh2]);
+			clipControl(gui, this.mixer, this.facesClip, [null, this.mesh, this.mesh2]);
 
 			var memoryControl = function (gui, mixer, clips, rootObjects) {
 
@@ -458,19 +492,19 @@ module game {
 
 						'uncache clip': function () {
 
-							mixer.uncacheClip(clip);
+							_it.mixer.uncacheClip(clip);
 
 						},
 
 						'uncache root': function () {
 
-							mixer.uncacheRoot(root);
+							_it.mixer.uncacheRoot(root);
 
 						},
 
 						'uncache action': function () {
 
-							mixer.uncacheAction(clip, root);
+							_it.mixer.uncacheAction(clip, root);
 						}
 					};
 
@@ -482,39 +516,9 @@ module game {
 
 			};
 
-			memoryControl(gui, mixer,
-				[bonesClip, facesClip], [mesh, mesh2]);
+			memoryControl(gui, this.mixer,
+				[this.bonesClip, this.facesClip], [this.mesh, this.mesh2]);
 		}
-
-		onDocumentMouseMove(event) {
-
-			mouseX = (event.clientX - windowHalfX);
-			mouseY = (event.clientY - windowHalfY);
-
-		}
-		animate() {
-			var delta = 0.75 * clock.getDelta();
-			camera.position.x += (mouseX - camera.position.x) * .05;
-			camera.position.y = THREE.Math.clamp(camera.position.y + (- mouseY - camera.position.y) * .05, 0, 1000);
-			camera.lookAt(scene.position);
-			if (mixer) {
-				mixer.update(delta);
-			}
-			if (showMemInfo) {
-				var s = mixer.stats,
-					ciS = s.controlInterpolants;
-				domMemInfo.innerHTML =
-					s.actions.inUse + " / " + s.actions.total + " actions " +
-					s.bindings.inUse + " / " + s.bindings.total + " bindings " +
-					ciS.inUse + " / " + ciS.total + " control interpolants";
-
-			}
-
-		}
-
-
-
-
 
 
 	}

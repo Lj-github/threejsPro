@@ -4,6 +4,7 @@
  "/debug/com/App.js",
  "/debug/com/APPTimeOut.js",
  "/debug/com/DomTopic.js",
+ "/debug/com/Loader.js",
  "/debug/com/Render.js",
  "/debug/com/SecTimeCb.js",
  "/debug/com/Topic.js",
@@ -13,11 +14,11 @@
  "/debug/group/example/canvas_geometry_birds/Main_birds.js",
  "/debug/group/example/canvas_geometry_earth/Main_canvas_geometry_earth.js",
  "/debug/group/example/canvas_geometry_hierarchy/canvas_geometry_hierarchy.js",
+ "/debug/group/example/webgl_animation_skinning_morph/Main_webgl_animation_skinning_morph.js",
  "/debug/group/ExpConfig.js",
  "/debug/Main.js"]
 ,
  "initial": [
 "/lib/stats/stats.min.js",
-  "/lib/dat/dat.gui.min.js"
- ]
+ "/lib/dat/dat.gui.min.js"]
 }

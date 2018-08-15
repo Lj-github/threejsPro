@@ -1,5 +1,9 @@
 
 namespace App {
+    /**
+     * randerer  不能在重新new 了  scene  camera 可以
+     */
+
     export function run() {
         let scene = new THREE.Scene()
         App.scene = scene
@@ -60,9 +64,9 @@ namespace App {
     export function setCamera(fov?:number,aspect?:number,near?:number,far?:number,pos?:pos){
         let camera = new THREE.PerspectiveCamera(fov || 75, aspect || window.innerWidth / window.innerHeight, near || 0.1, far ||1000)
         App.camera = camera
-        camera.position.x = pos? pos.x: 5
-        camera.position.y = pos? pos.y: 5
-        camera.position.z = pos? pos.z: 5
+        camera.position.x = pos? pos.x: 0
+        camera.position.y = pos? pos.y: 0
+        camera.position.z = pos? pos.z: 0
         camera.lookAt(App.scene.position)
     }
 }
