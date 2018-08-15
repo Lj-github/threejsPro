@@ -5,6 +5,7 @@ const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
     filename: 'index.html',
     inject: 'body'
 })
+console.log( "__dirname ===>>" + __dirname + "")
 
 /* Configure BrowserSync */
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
@@ -25,11 +26,13 @@ module.exports = {
     mode: 'development',
     devtool: 'source-map',
     entry: [
-        './src/Main.ts'
+        './src/Main.ts',
+        //'./src/com/App.ts',
+
     ],
     output: {
         path: __dirname + '/dist',
-        filename: 'Main.js'
+        filename: '[name].bundle.js'
     },
     module: {
         rules: [

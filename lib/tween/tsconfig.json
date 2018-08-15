@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "outFile": "bin/Tween.js",
+        "allowJs": true
+    },
+    "files": [
+        "src/Tween.js"
+    ]
+}

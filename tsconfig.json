@@ -7,8 +7,9 @@
         "emitDecoratorMetadata": true,
         "preserveConstEnums": true,
         "suppressImplicitAnyIndexErrors": true,
-        "outDir": "./lib/",
-        "types": []
+        "outDir": "./debug",
+        "types": [],
+        "sourceMap": false
     },
     "awesomeTypescriptLoaderOptions": {
         "useWebpackText": true,
@@ -16,14 +17,13 @@
         "useCache": true
     },
     "exclude": [
-        "node_modules",
-        "lib"
+        "node_modules"
+
     ],
     "include": [
-        "src"
+        "src/**/*.ts",
+        "lib"
     ],
     "compileOnSave": true,
     "buildOnSave": false
-
-
 }
