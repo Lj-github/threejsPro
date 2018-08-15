@@ -1,5 +1,4 @@
 module game {
-
 	export class Main_webgl_animation_skinning_morph {
 	    SCREEN_WIDTH = window.innerWidth;
         SCREEN_HEIGHT = window.innerHeight;
@@ -29,7 +28,6 @@ module game {
 
 			App.scene = undefined
 			App.scene = new THREE.Scene();
-
 
 			App.camera.position.z = 2200;
 
