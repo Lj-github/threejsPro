@@ -12,12 +12,15 @@ module Music{
         public voicehigh :any;
         public stepp:any;
         public analyser:AnalyserNode;
-        public init(){
+        constructor(musicUrl:string){
+            this.init(musicUrl)
+        }
+        public init(musicUrl:string){
             document.body.appendChild(this.createAudioElement())
             //<audio id="audio" style=" " src="shapeofyou.mp3"></audio>
             var audio :any = document.getElementById('audio');
             var actx=new AudioContext();
-            audio.src="resource/music/Time.mp3";
+            audio.src= musicUrl ;//";
             this.analyser=actx.createAnalyser();
             var audioSrc=actx.createMediaElementSource(audio);
             audioSrc.connect(this.analyser);

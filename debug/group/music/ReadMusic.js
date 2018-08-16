@@ -1,12 +1,11 @@
 var game;
 (function (game) {
     class ReadMusic {
-        constructor() {
-            this.initUI();
+        constructor(musicPath) {
+            this.initUI(musicPath);
         }
-        initUI() {
-            var music = new Music.ReadBuff();
-            music.init();
+        initUI(musicPath) {
+            var music = new Music.ReadBuff(musicPath);
             this.music = music;
             Animate.addRenderRunFunction(this.getBuff, this);
             let audio = document.getElementById('audio');
@@ -16,7 +15,6 @@ var game;
         }
         getBuff() {
             var buf = this.music.getBuff();
-            console.log(buf);
             Topic.publish("readMusicBuff", buf);
         }
     }

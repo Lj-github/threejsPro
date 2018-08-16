@@ -4,16 +4,17 @@
 var Music;
 (function (Music) {
     class ReadBuff {
-        constructor() {
+        constructor(musicUrl) {
             this.LINENUM = 80;
             this.SHAP = 2; //1:圆   2 ：柱 3 ：线
+            this.init(musicUrl);
         }
-        init() {
+        init(musicUrl) {
             document.body.appendChild(this.createAudioElement());
             //<audio id="audio" style=" " src="shapeofyou.mp3"></audio>
             var audio = document.getElementById('audio');
             var actx = new AudioContext();
-            audio.src = "resource/music/Time.mp3";
+            audio.src = musicUrl; //";
             this.analyser = actx.createAnalyser();
             var audioSrc = actx.createMediaElementSource(audio);
             audioSrc.connect(this.analyser);

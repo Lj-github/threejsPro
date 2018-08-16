@@ -6,7 +6,7 @@ var game;
             this.allCube = [];
         }
         initUI() {
-            this.musicReader = new game.ReadMusic();
+            this.musicReader = new game.ReadMusic("resource/music/Jessy Matador - Bomba (Radio Edit) (Remix Klass).mp3");
             var aspect = window.innerWidth / window.innerHeight;
             App.camera = new THREE.OrthographicCamera(this.frustumSize * aspect / -2, this.frustumSize * aspect / 2, this.frustumSize / 2, this.frustumSize / -2, 1, 2000);
             App.camera.position.y = 400;

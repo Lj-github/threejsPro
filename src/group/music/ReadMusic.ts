@@ -1,12 +1,12 @@
 module game{
     export class ReadMusic {
         public music : Music.ReadBuff
-        constructor(){
-            this.initUI()
+        constructor(musicPath :string){
+            this.initUI(musicPath)
         }
-        initUI(){
-            var music = new Music.ReadBuff()
-            music.init()
+        initUI(musicPath:string){
+            var music = new Music.ReadBuff(musicPath)
+
             this.music = music
             Animate.addRenderRunFunction(this.getBuff, this)
             let audio :any = document.getElementById('audio');
@@ -17,7 +17,7 @@ module game{
         }
         public getBuff(){
             var buf = this.music.getBuff()
-            console.log(buf)
+
             Topic.publish("readMusicBuff",buf)
         }
 

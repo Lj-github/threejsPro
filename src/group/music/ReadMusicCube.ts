@@ -11,7 +11,7 @@ module game {
         }
 
         public initUI() {
-            this.musicReader = new ReadMusic()
+            this.musicReader = new ReadMusic("resource/music/Jessy Matador - Bomba (Radio Edit) (Remix Klass).mp3")
 
             var aspect = window.innerWidth / window.innerHeight;
             App.camera = new THREE.OrthographicCamera(this.frustumSize * aspect / -2,
