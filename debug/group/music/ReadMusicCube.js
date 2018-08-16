@@ -46,7 +46,7 @@ var game;
             App.renderer.setSize(window.innerWidth, window.innerHeight);
             DomTopic.addDomEventListener(DomTopic.resize, this.onWindowResize, this);
             //Animate.addRenderRunFunction(this.animate, this)
-            Topic.subscribe("readMusicBuff", this.animate, this);
+            //Topic.subscribe("readMusicBuff",this.animate,this)
         }
         onWindowResize() {
             var aspect = window.innerWidth / window.innerHeight;

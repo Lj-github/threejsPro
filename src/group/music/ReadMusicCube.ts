@@ -60,7 +60,7 @@ module game {
             DomTopic.addDomEventListener(DomTopic.resize, this.onWindowResize, this)
 
             //Animate.addRenderRunFunction(this.animate, this)
-            Topic.subscribe("readMusicBuff",this.animate,this)
+            //Topic.subscribe("readMusicBuff",this.animate,this)
         }
 
         private onWindowResize() {

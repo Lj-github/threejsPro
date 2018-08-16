@@ -7,9 +7,11 @@ var Music;
         constructor(musicUrl) {
             this.LINENUM = 80;
             this.SHAP = 2; //1:圆   2 ：柱 3 ：线
+            this.musicFilePath = "resource/music.json";
             this.init(musicUrl);
         }
         init(musicUrl) {
+            App.load(this.musicFilePath, this.getAllMusic, this);
             document.body.appendChild(this.createAudioElement());
             //<audio id="audio" style=" " src="shapeofyou.mp3"></audio>
             var audio = document.getElementById('audio');
@@ -33,6 +35,9 @@ var Music;
             var audio = document.createElement("audio");
             audio.id = id;
             return audio;
+        }
+        getAllMusic(json) {
+            console.log(json);
         }
     }
     Music.ReadBuff = ReadBuff;

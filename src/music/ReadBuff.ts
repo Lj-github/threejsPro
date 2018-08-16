@@ -1,7 +1,10 @@
 /**
  *
  */
+
 module Music{
+    import loaderType = App.loaderType;
+
     export  interface musicbuffObj {
         voicehigh:any
         step:any
@@ -12,10 +15,12 @@ module Music{
         public voicehigh :any;
         public stepp:any;
         public analyser:AnalyserNode;
+          private musicFilePath = "resource/music.json"
         constructor(musicUrl:string){
             this.init(musicUrl)
         }
         public init(musicUrl:string){
+            App.load(this.musicFilePath,this.getAllMusic,this)
             document.body.appendChild(this.createAudioElement())
             //<audio id="audio" style=" " src="shapeofyou.mp3"></audio>
             var audio :any = document.getElementById('audio');
@@ -39,6 +44,13 @@ module Music{
             var audio = document.createElement("audio")
             audio.id = id
             return audio
+        }
+
+        public getAllMusic(json){
+              console.log(json)
+
+
+
         }
     }
 }
