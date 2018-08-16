@@ -2,6 +2,7 @@ var game;
 (function (game) {
     class ReadMusic {
         constructor() {
+            this.initUI();
         }
         initUI() {
             var music = new Music.ReadBuff();
@@ -16,6 +17,7 @@ var game;
         getBuff() {
             var buf = this.music.getBuff();
             console.log(buf);
+            Topic.publish("readMusicBuff", buf);
         }
     }
     game.ReadMusic = ReadMusic;

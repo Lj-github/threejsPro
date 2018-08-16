@@ -1,12 +1,11 @@
 /**
+ *
  */
 module Music{
-    interface musicbuffObj {
+    export  interface musicbuffObj {
         voicehigh:any
         step:any
-
     }
-
     export class ReadBuff{
         public LINENUM = 80;
         public SHAP = 2;//1:圆   2 ：柱 3 ：线
@@ -14,7 +13,6 @@ module Music{
         public stepp:any;
         public analyser:AnalyserNode;
         public init(){
-
             document.body.appendChild(this.createAudioElement())
             //<audio id="audio" style=" " src="shapeofyou.mp3"></audio>
             var audio :any = document.getElementById('audio');
@@ -26,9 +24,9 @@ module Music{
             this.analyser.connect(actx.destination);
         }
         public getBuff(){
-            this.voicehigh=new Uint8Array(this.analyser.frequencyBinCount);
+            this.voicehigh = new Uint8Array(this.analyser.frequencyBinCount);
             this.analyser.getByteFrequencyData(this.voicehigh);
-            this.stepp=Math.round(this.voicehigh.length/this.LINENUM);
+            this.stepp = Math.round(this.voicehigh.length/this.LINENUM);
             let bf = <musicbuffObj>{};
             bf.voicehigh = this.voicehigh;
             bf.step = this.stepp;
@@ -39,6 +37,5 @@ module Music{
             audio.id = id
             return audio
         }
-
     }
 }

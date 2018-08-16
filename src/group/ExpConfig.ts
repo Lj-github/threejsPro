@@ -9,5 +9,6 @@ const ExpConfig  = {
 
 
     //music
-    readMusic : "ReadMusic"
+    readMusic : "ReadMusic",
+    ReadMusicCube:"ReadMusicCube"
 }

@@ -5,5 +5,6 @@ const ExpConfig = {
     Canvas_geometry_hierarchy: "Canvas_geometry_hierarchy",
     webgl_animation_skinning_morph: "Main_webgl_animation_skinning_morph",
     //music
-    readMusic: "ReadMusic"
+    readMusic: "ReadMusic",
+    ReadMusicCube: "ReadMusicCube"
 };

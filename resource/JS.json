@@ -20,6 +20,7 @@
  "/debug/group/example/webgl_animation_skinning_morph/Main_webgl_animation_skinning_morph.js",
  "/debug/group/ExpConfig.js",
  "/debug/group/music/ReadMusic.js",
+ "/debug/group/music/ReadMusicCube.js",
  "/debug/Main.js",
  "/debug/music/ReadBuff.js"]
 ,

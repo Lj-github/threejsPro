@@ -2,7 +2,7 @@ module game{
     export class ReadMusic {
         public music : Music.ReadBuff
         constructor(){
-
+            this.initUI()
         }
         initUI(){
             var music = new Music.ReadBuff()
@@ -18,6 +18,7 @@ module game{
         public getBuff(){
             var buf = this.music.getBuff()
             console.log(buf)
+            Topic.publish("readMusicBuff",buf)
         }
 
 
