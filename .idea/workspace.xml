@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64aa553e-368f-4cb2-89ca-9216c281d9ea" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/group/example/webgl_animation_skinning_morph/Main_webgl_animation_skinning_morph.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/group/example/webgl_animation_skinning_morph/Main_webgl_animation_skinning_morph.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/com/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/com/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/group/ExpConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/group/ExpConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/music.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/JS.json" beforeDir="false" afterPath="$PROJECT_DIR$/resource/JS.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/App.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/App.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/group/ExpConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/group/ExpConfig.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,15 +21,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/threejsPro$runDebug.coverage" NAME="runDebug Coverage Results" MODIFIED="1534321924951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/threejsPro$runDebug.coverage" NAME="runDebug Coverage Results" MODIFIED="1534388666176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Main_webgl_animation_skinning_morph.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/group/example/webgl_animation_skinning_morph/Main_webgl_animation_skinning_morph.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state relative-caret-position="257">
+              <caret line="73" column="60" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -32,61 +38,61 @@
         <entry file="file://$PROJECT_DIR$/src/base/BaseLayers.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main_test.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main_test.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/group/example/Test/Main_test.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="238">
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gui_webgl_animation_skinning_morph.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/group/example/webgl_animation_skinning_morph/Gui_webgl_animation_skinning_morph.ts">
+      <file leaf-file-name="LineGroup.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/music/music/src/drawLib/LineGroup.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+            <state relative-caret-position="74">
+              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webgl_animation_skinning_morph.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/three.js-master/examples/webgl_animation_skinning_morph.html">
+      <file leaf-file-name="Dre.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/music/music/src/readMusic/Dre.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5263">
-              <caret line="636" column="30" lean-forward="true" selection-start-line="636" selection-start-column="30" selection-end-line="636" selection-end-column="30" />
+            <state relative-caret-position="323">
+              <caret line="19" selection-end-line="101" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/App.ts">
+      <file leaf-file-name="ReadBuff.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/music/ReadBuff.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+            <state relative-caret-position="200">
+              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Animate.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/Animate.ts">
+      <file leaf-file-name="ReadMusic.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/group/music/ReadMusic.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+            <state relative-caret-position="408">
+              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main_canvas_geometry_earth.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/group/example/canvas_geometry_earth/Main_canvas_geometry_earth.ts">
+      <file leaf-file-name="Main.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/music/music/src/Main.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="65" column="60" lean-forward="true" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="60" />
+            <state relative-caret-position="289">
+              <caret line="196" column="21" lean-forward="true" selection-start-line="195" selection-start-column="8" selection-end-line="196" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -94,8 +100,17 @@
       <file leaf-file-name="ExpConfig.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/group/ExpConfig.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="85">
+              <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/App.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -112,7 +127,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dom</find>
       <find>stats</find>
       <find>mouseX</find>
       <find>windowHalfX</find>
@@ -129,7 +143,7 @@
       <find>folders</find>
       <find>0</find>
       <find>parent</find>
-      <find />
+      <find>namespace dat</find>
       <find>RecalculateRGB0</find>
       <find>odels/skinned/knight.js</find>
       <find>...</find>
@@ -142,6 +156,7 @@
       <find>facesClip</find>
       <find>WebGLRenderer</find>
       <find>mixer</find>
+      <find>draw</find>
     </findStrings>
     <replaceStrings>
       <replace>GUI</replace>
@@ -188,14 +203,16 @@
         <option value="$PROJECT_DIR$/lib/stats/README.md" />
         <option value="$PROJECT_DIR$/lib/dat/dat.gui.d.ts" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/group/ExpConfig.ts" />
         <option value="$PROJECT_DIR$/src/com/Loader.ts" />
         <option value="$PROJECT_DIR$/three.js-master/examples/webgl_animation_skinning_morph.html" />
-        <option value="$PROJECT_DIR$/src/com/App.ts" />
         <option value="$PROJECT_DIR$/src/group/example/webgl_animation_skinning_morph/Gui_webgl_animation_skinning_morph.ts" />
         <option value="$PROJECT_DIR$/src/group/example/webgl_animation_skinning_morph/Main_webgl_animation_skinning_morph.ts" />
         <option value="$PROJECT_DIR$/src/base/BaseLayers.ts" />
         <option value="$PROJECT_DIR$/src/group/example/Test/Main_test.ts" />
+        <option value="$PROJECT_DIR$/src/group/ExpConfig.ts" />
+        <option value="$PROJECT_DIR$/src/com/App.ts" />
+        <option value="$PROJECT_DIR$/src/music/ReadBuff.ts" />
+        <option value="$PROJECT_DIR$/src/group/music/ReadMusic.ts" />
       </list>
     </option>
   </component>
@@ -211,8 +228,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-11" />
-    <option name="y" value="71" />
+    <option name="x" value="10" />
+    <option name="y" value="44" />
     <option name="width" value="1920" />
     <option name="height" value="979" />
   </component>
@@ -235,17 +252,18 @@
             <path>
               <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
               <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
-              <item name="debug" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
               <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
               <item name="resource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+              <item name="music" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
@@ -269,73 +287,18 @@
               <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="group" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="music" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
               <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="group" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="canvas_geometry_birds" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="group" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="canvas_geometry_earth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="group" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="canvas_geometry_hierarchy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="group" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="group" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="webgl_animation_skinning_morph" type="462c0819:PsiDirectoryNode" />
+              <item name="music" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
               <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
               <item name="three.js-master" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
-              <item name="three.js-master" type="462c0819:PsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
-              <item name="three.js-master" type="462c0819:PsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
-              <item name="three.js-master" type="462c0819:PsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="skinned" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -356,17 +319,17 @@
     <property name="typescript-compiler-editor-notification" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/stats" />
-      <recent name="$PROJECT_DIR$/lib/tween" />
-      <recent name="$PROJECT_DIR$/lib/Detector" />
-      <recent name="$PROJECT_DIR$/lib/dat" />
-      <recent name="$PROJECT_DIR$/lib" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/Detector" />
       <recent name="$PROJECT_DIR$/lib/dat" />
       <recent name="$PROJECT_DIR$/src/group/example" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resource" />
+      <recent name="$PROJECT_DIR$/lib/stats" />
+      <recent name="$PROJECT_DIR$/lib/tween" />
+      <recent name="$PROJECT_DIR$/lib/Detector" />
+      <recent name="$PROJECT_DIR$/lib/dat" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -424,7 +387,7 @@
     <option name="totallyTimeSpent" value="22137000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="189" y="564" width="1920" height="979" extended-state="0" />
+    <frame x="10" y="44" width="1920" height="979" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="13" />
@@ -434,12 +397,11 @@
       <window_info anchor="bottom" id="Version Control" order="19" weight="0.20372526" />
       <window_info anchor="bottom" id="Python Console" order="1" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="18" visible="true" weight="0.20372526" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="18" visible="true" weight="0.27939466" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15814696" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15974441" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" />
       <window_info anchor="right" id="SciView" order="0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3993015" />
@@ -450,6 +412,7 @@
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,55 +434,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../../egret/SmartPikachu/SmartPikachuGit/SmartPikachu/SmartpikachuGame/libs/ezModules/thirdLibs/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../egret/SmartPikachu/SmartPikachuGit/SmartPikachu/SmartpikachuGame/libs/ezModules/thirdLibs/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/three.js-master/examples/js/libs/stats.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/three.js-master/examples/canvas_camera_orthographic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="102" column="45" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../egret/SmartPikachu/SmartPikachuGit/SmartPikachu/SmartpikachuGame/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/three/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="57" selection-start-line="57" selection-end-line="57" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../egret/SmartPikachu/SmartPikachuGit/SmartPikachu/SmartpikachuGame/indexRelease.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resource/LibJS.json" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -747,13 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es6.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="277" column="4" selection-start-line="277" selection-start-column="4" selection-end-line="277" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Loader.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -761,59 +668,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/group/ExpConfig.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/group/example/canvas_geometry_earth/Main_canvas_geometry_earth.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="65" column="60" lean-forward="true" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="60" />
+        <state relative-caret-position="1105">
+          <caret line="65" column="60" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Animate.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/App.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        <state relative-caret-position="238">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/three.js-master/examples/webgl_animation_skinning_morph.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5263">
-          <caret line="636" column="30" lean-forward="true" selection-start-line="636" selection-start-column="30" selection-end-line="636" selection-end-column="30" />
+        <state relative-caret-position="10812">
+          <caret line="636" column="30" selection-start-line="636" selection-start-column="30" selection-end-line="636" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/group/example/webgl_animation_skinning_morph/Gui_webgl_animation_skinning_morph.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/group/example/webgl_animation_skinning_morph/Main_webgl_animation_skinning_morph.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/BaseLayers.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -824,10 +703,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/BaseLayers.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music/music/src/app/MainScene.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/group/example/Test/Main_test.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="238">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es6.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="7732" column="4" selection-start-line="7732" selection-start-column="4" selection-end-line="7732" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="1953" column="4" selection-start-line="1953" selection-start-column="4" selection-end-line="1953" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/group/example/webgl_animation_skinning_morph/Main_webgl_animation_skinning_morph.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="73" column="60" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music/music/src/readMusic/Dre.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music/music/src/drawLib/LineGroup.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/App.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/group/ExpConfig.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/music/ReadBuff.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music/music/src/Main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="196" column="21" lean-forward="true" selection-start-line="195" selection-start-column="8" selection-end-line="196" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/group/music/ReadMusic.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
         </state>
       </provider>
     </entry>

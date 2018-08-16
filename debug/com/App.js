@@ -38,6 +38,9 @@ var App;
     function runWindowFrame() {
     }
     App.runWindowFrame = runWindowFrame;
+    function createContaner() {
+    }
+    App.createContaner = createContaner;
     function showFPS() {
         var stats = new Stats();
         document.body.appendChild(stats.dom); //fps
@@ -55,5 +58,13 @@ var App;
         camera.lookAt(App.scene.position);
     }
     App.setCamera = setCamera;
+    function getRandomColor() {
+        return '0x' +
+            (function (color) {
+                return (color += '0123456789abcdef'[Math.floor(Math.random() * 16)])
+                    && (color.length == 6) ? color : arguments.callee(color);
+            })('');
+    }
+    App.getRandomColor = getRandomColor;
 })(App || (App = {}));
 //window["App"] = App

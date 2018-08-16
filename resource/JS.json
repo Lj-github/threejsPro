@@ -1,6 +1,7 @@
 {
 "game": [
-"/debug/com/Animate.js",
+"/debug/base/BaseLayers.js",
+ "/debug/com/Animate.js",
  "/debug/com/App.js",
  "/debug/com/APPTimeOut.js",
  "/debug/com/DomTopic.js",
@@ -14,9 +15,13 @@
  "/debug/group/example/canvas_geometry_birds/Main_birds.js",
  "/debug/group/example/canvas_geometry_earth/Main_canvas_geometry_earth.js",
  "/debug/group/example/canvas_geometry_hierarchy/canvas_geometry_hierarchy.js",
+ "/debug/group/example/Test/Main_test.js",
+ "/debug/group/example/webgl_animation_skinning_morph/Gui_webgl_animation_skinning_morph.js",
  "/debug/group/example/webgl_animation_skinning_morph/Main_webgl_animation_skinning_morph.js",
  "/debug/group/ExpConfig.js",
- "/debug/Main.js"]
+ "/debug/group/music/ReadMusic.js",
+ "/debug/Main.js",
+ "/debug/music/ReadBuff.js"]
 ,
  "initial": [
 "/lib/stats/stats.min.js",

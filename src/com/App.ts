@@ -16,6 +16,8 @@ namespace App {
         DomTopic.startListen()
         //App.renderer.render( App.scene, App.camera );
 
+
+
     }
     export let exampleTar :any
 
@@ -39,6 +41,10 @@ namespace App {
 
     }
     export function runWindowFrame(){
+
+    }
+    export function createContaner() {
+
 
     }
 
@@ -68,6 +74,14 @@ namespace App {
         camera.position.y = pos? pos.y: 0
         camera.position.z = pos? pos.z: 0
         camera.lookAt(App.scene.position)
+    }
+
+     export function getRandomColor() {
+        return '0x' +
+            (function (color) {
+                return (color += '0123456789abcdef'[Math.floor(Math.random() * 16)])
+                && (color.length == 6) ? color : arguments.callee(color);
+            })('');
     }
 }
 //window["App"] = App

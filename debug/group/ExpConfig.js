@@ -3,5 +3,7 @@ const ExpConfig = {
     canvas_camera_orthograghic: "Main_canvas_camera_orthograghic",
     canvas_geometry_earth: "Main_canvas_geometry_earth",
     Canvas_geometry_hierarchy: "Canvas_geometry_hierarchy",
-    webgl_animation_skinning_morph: "Main_webgl_animation_skinning_morph"
+    webgl_animation_skinning_morph: "Main_webgl_animation_skinning_morph",
+    //music
+    readMusic: "ReadMusic"
 };
