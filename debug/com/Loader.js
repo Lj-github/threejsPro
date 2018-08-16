@@ -2,7 +2,8 @@ var App;
 (function (App) {
     App.loaderType = {
         loader: 0,
-        Jsonloader: 1 //默认
+        Jsonloader: 1,
+        FontLoader: 2
     };
     function Loader(url, cb, target, type = App.loaderType.Jsonloader) {
         var loader;
@@ -11,6 +12,9 @@ var App;
                 break;
             case App.loaderType.Jsonloader:
                 loader = new THREE.JSONLoader();
+                break;
+            case App.loaderType.FontLoader:
+                loader = new THREE.FontLoader();
                 break;
         }
         loader.load(url, function () {

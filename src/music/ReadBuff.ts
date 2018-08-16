@@ -2,8 +2,10 @@
  *
  */
 
+
+//todo 添加 播放 控制 新建个类 （如果可以的话 控制快进  快退） 控制歌词 进行 3d 滚动  ！！！
+//todo 待考虑 可能需要 后端 解析 lrc 文件(歌词文件)
 module Music{
-    import loaderType = App.loaderType;
 
     export  interface musicbuffObj {
         voicehigh:any
@@ -24,7 +26,7 @@ module Music{
             document.body.appendChild(this.createAudioElement())
             //<audio id="audio" style=" " src="shapeofyou.mp3"></audio>
             var audio :any = document.getElementById('audio');
-            var actx=new AudioContext();
+            var actx = new AudioContext();
             audio.src= musicUrl ;//";
             this.analyser=actx.createAnalyser();
             var audioSrc=actx.createMediaElementSource(audio);

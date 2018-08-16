@@ -15,6 +15,7 @@
  "/debug/group/example/canvas_geometry_birds/Main_birds.js",
  "/debug/group/example/canvas_geometry_earth/Main_canvas_geometry_earth.js",
  "/debug/group/example/canvas_geometry_hierarchy/canvas_geometry_hierarchy.js",
+ "/debug/group/example/shader/Main_webgl_shaders_vector.js",
  "/debug/group/example/Test/Main_test.js",
  "/debug/group/example/webgl_animation_skinning_morph/Gui_webgl_animation_skinning_morph.js",
  "/debug/group/example/webgl_animation_skinning_morph/Main_webgl_animation_skinning_morph.js",
@@ -25,6 +26,9 @@
  "/debug/music/ReadBuff.js"]
 ,
  "initial": [
-"/lib/stats/stats.min.js",
- "/lib/dat/dat.gui.min.js"]
+ "/lib/stats/stats.min.js",
+ "/lib/dat/dat.gui.min.js",
+ "/lib/OrbitControls/OrbitControls.js"
+
+ ]
 }
