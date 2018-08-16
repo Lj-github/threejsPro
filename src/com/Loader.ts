@@ -2,7 +2,8 @@
 module App{
     export const loaderType = {
         loader : 0,
-        Jsonloader:1 //默认
+        Jsonloader:1, //默认
+        FontLoader:2
     }
     export function Loader( url:string,cb:Function,target:any,type:number = loaderType.Jsonloader) {
         var loader
@@ -11,6 +12,9 @@ module App{
                 break;
             case loaderType.Jsonloader:
                 loader = new THREE.JSONLoader()
+                break;
+            case loaderType.FontLoader:
+                loader = new THREE.FontLoader()
                 break;
         }
         loader.load(url, function () {

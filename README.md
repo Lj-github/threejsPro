@@ -34,4 +34,4 @@ $ dtsmake -s fileame.js
 
 #### 缺少的 .d.ts 库  https://github.com/DefinitelyTyped/DefinitelyTyped 查找
 
-
+#### jetbrain 可以安装 glsl 插件 高亮度 代码
