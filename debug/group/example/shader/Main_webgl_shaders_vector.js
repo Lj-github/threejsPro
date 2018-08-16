@@ -21,7 +21,7 @@ var game;
             this.controls.update();
             App.scene = new THREE.Scene();
             App.scene.background = new THREE.Color(0xf0f0f0);
-            var theText = "&"; // i % & j b 8
+            var theText = "88"; // i % & j b 8
             this.group = new THREE.Group();
             App.scene.add(this.group);
             var textMaterial = new THREE.MeshBasicMaterial({
@@ -147,7 +147,6 @@ var game;
             bezierGeometry.computeVertexNormals();
             var bezierGeometryd = new THREE.BufferGeometry().fromGeometry(bezierGeometry);
             bezierGeometryd.addAttribute('invert', new THREE.Float32BufferAttribute(invert, 1));
-            //
             var d = 'varying vec2 vUv;' +
                 'attribute float invert;' +
                 'varying float flip;' +
@@ -189,7 +188,6 @@ var game;
             this.text.rotation.x = 0;
             this.text.rotation.y = Math.PI * 2;
             this.group.add(this.text);
-            //
             text3d = new THREE.ShapeGeometry(solidShapeGroup);
             text3d.computeBoundingBox();
             this.text = new THREE.Mesh(text3d, new THREE.MeshBasicMaterial({ color: 0.45 * 0xffffff, side: THREE.DoubleSide }));
