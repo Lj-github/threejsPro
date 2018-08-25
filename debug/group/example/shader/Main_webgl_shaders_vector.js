@@ -24,13 +24,17 @@ var game;
             var theText = "88"; // i % & j b 8
             this.group = new THREE.Group();
             App.scene.add(this.group);
+            //默认将呈现为平面多边形。要把网孔绘制为线框，只需设置“线框（wireframe）”属性设置为true。
             var textMaterial = new THREE.MeshBasicMaterial({
                 color: new THREE.Color(0, 0, 1),
                 side: THREE.DoubleSide,
-                wireframe: true
+                wireframe: true // 线框
             });
+            //创建一个Shapes数组，表示字体中的文本。  获取字体中的 内容
             var textShapes = font.generateShapes(theText, 180, 2);
+            //从一个或多个路径形状创建一个单面多边形几何模型.
             var text3d = new THREE.ShapeGeometry(textShapes);
+            //Three.js中给导入的3D模型重新设置中心点
             text3d.computeBoundingBox();
             var centerOffset = -0.5 * (text3d.boundingBox.max.x - text3d.boundingBox.min.x);
             this.text = new THREE.Mesh(text3d, textMaterial);
@@ -132,15 +136,15 @@ var game;
             text3d = new THREE.ShapeGeometry(convexhullShapeGroup);
             text3d.computeBoundingBox();
             var centerOffset = -0.5 * (text3d.boundingBox.max.x - text3d.boundingBox.min.x);
-            var text1 = new THREE.Mesh(text3d, textMaterial);
-            text1.position.x = centerOffset + 150;
-            this.group.add(text1);
+            this.text1 = new THREE.Mesh(text3d, textMaterial);
+            this.text1.position.x = centerOffset + 150;
+            this.group.add(this.text1);
             text3d = new THREE.ShapeGeometry(solidShapeGroup);
             text3d.computeBoundingBox();
             var centerOffset = -0.5 * (text3d.boundingBox.max.x - text3d.boundingBox.min.x);
-            var text2 = new THREE.Mesh(text3d, new THREE.MeshBasicMaterial({ color: new THREE.Color(1, 0, 0), side: THREE.DoubleSide, wireframe: true }));
-            text2.position.x = centerOffset + 150;
-            this.group.add(text2);
+            this.text2 = new THREE.Mesh(text3d, new THREE.MeshBasicMaterial({ color: new THREE.Color(1, 0, 0), side: THREE.DoubleSide, wireframe: true }));
+            this.text2.position.x = centerOffset + 150;
+            this.group.add(this.text2);
             //
             bezierGeometry.computeBoundingBox();
             bezierGeometry.computeFaceNormals();

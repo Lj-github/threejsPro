@@ -10,6 +10,6 @@ const ExpConfig  = {
     webgl_shaders_vector:"Main_webgl_shaders_vector",
 
     //music
-    readMusic : "ReadMusic",
+    //readMusic : "ReadMusic",
     ReadMusicCube:"ReadMusicCube"
 }

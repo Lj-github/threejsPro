@@ -16,7 +16,7 @@ namespace Animate{
 
         requestAnimationFrame(Animate.run)
     }
-     export function start() {
+    export function start() {
 
     }
 

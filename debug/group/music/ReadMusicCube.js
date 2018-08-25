@@ -45,8 +45,7 @@ var game;
             App.renderer.setPixelRatio(window.devicePixelRatio);
             App.renderer.setSize(window.innerWidth, window.innerHeight);
             DomTopic.addDomEventListener(DomTopic.resize, this.onWindowResize, this);
-            //Animate.addRenderRunFunction(this.animate, this)
-            //Topic.subscribe("readMusicBuff",this.animate,this)
+            Animate.addRenderRunFunction(this.animate, this);
         }
         onWindowResize() {
             var aspect = window.innerWidth / window.innerHeight;
@@ -65,20 +64,19 @@ var game;
             this.frustumSize = undefined;
             //App.scene.remove()
         }
-        animate(buff) {
+        animate() {
             //this.stats.begin();
             var timer = Date.now() * 0.0001;
             App.camera.position.x = Math.cos(timer) * 800;
             App.camera.position.z = Math.sin(timer) * 800;
             App.camera.lookAt(App.scene.position);
-            if (buff) {
+            this.buff = this.musicReader.music.getBuff();
+            if (this.buff) {
                 for (var i = 0; i < this.allCube.length; i++) {
-                    var cube = this.allCube[i];
-                    if (cube) {
-                        let voicehigh = buff.voicehigh;
-                        let step = buff.step;
-                        var value = voicehigh[step * i];
-                        cube.scale.y = value / 25;
+                    if (this.allCube[i]) {
+                        var scale = this.buff.voicehigh[this.buff.step * i] / 25;
+                        scale = scale === 0 ? 0.00001 : scale;
+                        this.allCube[i].scale.y = scale;
                     }
                 }
             }

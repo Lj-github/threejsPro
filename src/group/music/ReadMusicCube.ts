@@ -7,6 +7,7 @@ module game {
         frustumSize = 1000;
         allCube = []
         musicReader :ReadMusic
+        buff:Music.musicbuffObj
         constructor() {
         }
 
@@ -59,8 +60,7 @@ module game {
             App.renderer.setSize(window.innerWidth, window.innerHeight);
             DomTopic.addDomEventListener(DomTopic.resize, this.onWindowResize, this)
 
-            //Animate.addRenderRunFunction(this.animate, this)
-            //Topic.subscribe("readMusicBuff",this.animate,this)
+            Animate.addRenderRunFunction(this.animate, this)
         }
 
         private onWindowResize() {
@@ -83,23 +83,22 @@ module game {
 			this.frustumSize = undefined
             //App.scene.remove()
         }
-        private animate(buff:Music.musicbuffObj) {
+        private animate() {
+
             //this.stats.begin();
             var timer = Date.now() * 0.0001;
             App.camera.position.x = Math.cos(timer) * 800;
             App.camera.position.z = Math.sin(timer) * 800;
             App.camera.lookAt(App.scene.position);
-            if (buff){
+            this.buff = this.musicReader.music.getBuff()
+            if (this.buff){
                 for (var i  = 0 ;i< this.allCube.length;i++ ){
-                    var cube:THREE.Mesh = this.allCube[i]
-                    if(cube){
+                    if (this.allCube[i]){
+                        //设置缩放  不能设置为0  否则 内存占用过大 知道卡死
+                        var scale = this.buff.voicehigh[this.buff.step * i] /25
+                        scale = scale === 0 ? 0.00001 : scale
 
-                        let voicehigh = buff.voicehigh;
-                        let step = buff.step;
-                        var value = voicehigh[step*i];
-
-                        cube.scale.y = value /25
-
+                        this.allCube[i].scale.y = scale
                     }
                 }
             }

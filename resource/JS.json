@@ -26,9 +26,7 @@
  "/debug/music/ReadBuff.js"]
 ,
  "initial": [
- "/lib/stats/stats.min.js",
+"/lib/stats/stats.min.js",
  "/lib/dat/dat.gui.min.js",
- "/lib/OrbitControls/OrbitControls.js"
-
- ]
+ "/lib/OrbitControls/OrbitControls.js"]
 }
