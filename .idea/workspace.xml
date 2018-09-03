@@ -3,17 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="64aa553e-368f-4cb2-89ca-9216c281d9ea" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/group/ExpConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/group/ExpConfig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/group/example/shader/Main_webgl_shaders_vector.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/group/example/shader/Main_webgl_shaders_vector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/group/music/ReadMusic.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/group/music/ReadMusic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/group/music/ReadMusicCube.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/group/music/ReadMusicCube.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/music/ReadBuff.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug/music/ReadBuff.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/JS.json" beforeDir="false" afterPath="$PROJECT_DIR$/resource/JS.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Animate.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Animate.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/group/ExpConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/group/ExpConfig.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/group/music/ReadMusic.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/group/music/ReadMusic.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/group/music/ReadMusicCube.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/group/music/ReadMusicCube.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/music/ReadBuff.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/music/ReadBuff.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,15 +20,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="webgl_shaders_vector.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/three.js-master/examples/webgl_shaders_vector.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="165" column="39" selection-start-line="165" selection-start-column="39" selection-end-line="165" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ReadMusic.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/group/music/ReadMusic.ts">
           <provider selected="true" editor-type-id="text-editor">
@@ -52,8 +32,8 @@
       <file leaf-file-name="ReadMusicCube.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/group/music/ReadMusicCube.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="92" column="43" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
+            <state relative-caret-position="425">
+              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
             </state>
           </provider>
         </entry>
@@ -61,21 +41,16 @@
       <file leaf-file-name="ReadBuff.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/music/ReadBuff.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="39" column="15" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
+            <state relative-caret-position="102">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="12" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecTimeCb.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/SecTimeCb.ts">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="App.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/App.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="656">
+            <state relative-caret-position="680">
               <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
@@ -84,7 +59,7 @@
       <file leaf-file-name="Animate.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Animate.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12">
+            <state relative-caret-position="238">
               <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
             </state>
           </provider>
@@ -99,36 +74,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShaderPass.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/three.js-master/examples/js/postprocessing/ShaderPass.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-568" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webgl_shader.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/three.js-master/examples/webgl_shader.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="96" selection-start-line="96" selection-end-line="96" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
-        <option value="TypeScript File" />
         <option value="GLSL Shader" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mesh</find>
       <find>createScene</find>
       <find>facesClip</find>
       <find>WebGLRenderer</find>
@@ -158,6 +116,7 @@
       <find>mat4</find>
       <find>ReadMusic</find>
       <find>ReadBuff</find>
+      <find>analyser</find>
     </findStrings>
     <replaceStrings>
       <replace>GUI</replace>
@@ -169,8 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/tween/package.json" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/debug/Main.js" />
         <option value="$PROJECT_DIR$/debug/canvas_geometry_birds/Main_birds.js" />
@@ -220,6 +177,8 @@
         <option value="$PROJECT_DIR$/src/music/ReadBuff.ts" />
         <option value="$PROJECT_DIR$/src/group/music/ReadMusic.ts" />
         <option value="$PROJECT_DIR$/src/group/music/ReadMusicCube.ts" />
+        <option value="$PROJECT_DIR$/src/music/ThreeMusci.ts" />
+        <option value="$PROJECT_DIR$/src/group/music/ThreeWebAudio.ts" />
       </list>
     </option>
   </component>
@@ -240,8 +199,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="116" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="27" />
     <option name="width" value="1920" />
     <option name="height" value="974" />
@@ -254,6 +212,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -265,12 +224,6 @@
               <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
               <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
@@ -290,6 +243,14 @@
               <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="group" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="canvas_geometry_earth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="group" type="462c0819:PsiDirectoryNode" />
               <item name="music" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -303,11 +264,16 @@
               <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
               <item name="three.js-master" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="threejsPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="threejsPro" type="462c0819:PsiDirectoryNode" />
+              <item name="three.js-master" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -419,7 +385,8 @@
     <option name="totallyTimeSpent" value="22137000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="116" y="27" width="1920" height="974" extended-state="1" />
+    <frame x="0" y="27" width="1920" height="974" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="13" />
       <window_info anchor="bottom" id="Event Log" order="17" side_tool="true" />
@@ -428,9 +395,9 @@
       <window_info anchor="bottom" id="Version Control" order="19" weight="0.20372526" />
       <window_info anchor="bottom" id="Python Console" order="1" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="18" visible="true" weight="0.16276346" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="18" visible="true" weight="0.1557377" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21086262" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21299255" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="right" id="SciView" order="0" />
@@ -472,8 +439,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/music/music/src/readMusic/Dre.ts" />
-    <entry file="file://$PROJECT_DIR$/music/music/src/ThemeAdapter.ts" />
     <entry file="file://$PROJECT_DIR$/music/music/src/Main.ts" />
     <entry file="file://$PROJECT_DIR$/src/base/BaseLayers.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -688,12 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/three.js-master/examples/js/postprocessing/BloomPass.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/three.js-master/examples/js/postprocessing/FilmPass.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/three.js-master/examples/webgl_shader_lava.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -705,13 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1355">
           <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/three/three-core.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="496" column="4" selection-start-line="496" selection-start-column="4" selection-end-line="496" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -731,7 +683,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/three.js-master/examples/webgl_shader.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="1632">
           <caret line="96" selection-start-line="96" selection-end-line="96" />
         </state>
       </provider>
@@ -744,13 +696,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/three.js-master/examples/js/postprocessing/ShaderPass.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-568" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/three.js-master/examples/webgl_shaders_vector.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
+        <state relative-caret-position="2805">
           <caret line="165" column="39" selection-start-line="165" selection-start-column="39" selection-end-line="165" selection-end-column="39" />
         </state>
       </provider>
@@ -764,26 +714,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/App.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
+        <state relative-caret-position="680">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Animate.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
+        <state relative-caret-position="238">
           <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/SecTimeCb.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/music/ReadBuff.ts">
+    <entry file="file://$PROJECT_DIR$/src/group/example/canvas_geometry_earth/Main_canvas_geometry_earth.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="39" column="15" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
-        </state>
+        <state relative-caret-position="-353" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/group/music/ReadMusic.ts">
@@ -793,10 +738,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="13528" column="13" selection-start-line="13528" selection-start-column="13" selection-end-line="13528" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/three.js-master/examples/webaudio_visualizer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="120" column="38" lean-forward="true" selection-start-line="120" selection-start-column="38" selection-end-line="120" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/music/ThreeMusci.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/group/music/ThreeWebAudio.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/music/ReadBuff.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/three/three-core.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="7621" column="4" selection-start-line="7621" selection-start-column="4" selection-end-line="7621" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/group/music/ReadMusicCube.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="92" column="43" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
+        <state relative-caret-position="425">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
         </state>
       </provider>
     </entry>
