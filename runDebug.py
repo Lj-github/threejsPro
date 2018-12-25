@@ -11,7 +11,7 @@ import shutil
 def GetFileList(dir, fileList = []):
     newDir = dir
     if os.path.isfile(dir):
-        fileList.append(dir.decode('utf-8'))
+        fileList.append(dir)
     elif os.path.isdir(dir):
         for s in os.listdir(dir):
             newDir=os.path.join(dir,s)
@@ -29,36 +29,24 @@ def getExcludeByFileType(type,file):
     return resList
 
 def buildJSJSON():
-    jsonFIle = "resource/JS.json"
+    jsonFIle = "JS.json"
     allJSFile = "debug/"
     filee = os.path.realpath(__file__)
     projectToolPath, projectToolName = os.path.split(filee)
-
     print("build js json begin")
     allJSFIleList = getExcludeByFileType("js", projectToolPath + "/" + allJSFile)
     res = {}
     res["initial"] = []
     res["game"] = []
-
     with open(jsonFIle, 'r') as f:
         res["initial"] = json.load(f)["initial"]
-
-
     if len(allJSFIleList) > 0:
 
         for fil in allJSFIleList:
             fil = fil.replace(projectToolPath, "")
             res["game"].append(fil)
-    # libjsonFIle = "resource/LibJS.json"
-    # allLibJS = {}
-    # with open(libjsonFIle, 'r') as f:
-    #     allLibJS =  json.load(f)
-    # for fi in allLibJS["lib"]:
-    #     res["initial"].append(fi)
-    resStr =  json.dumps(res).replace("{","{\n").replace("}","}\n").replace("[","[\n").replace("]","]\n").replace(",",",\n")
-
     with open(jsonFIle, 'w') as f:
-        f.write(resStr)
+        json.dump(res, f, sort_keys=True, indent=4, separators=(',', ':'), ensure_ascii=False)
         #json.dump(res, f)
 
 def delDebugJS():
@@ -88,6 +76,6 @@ if __name__ == '__main__':
     delDebugJS()
     buildTS()
     buildJSJSON()
-    runApp()
+    #runApp()
 
 
