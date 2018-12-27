@@ -31,6 +31,12 @@ $ npm i tern --save-dev
 $ dtsmake -s fileame.js
 ```
 
+## js压缩 
+```
+$ npm install uglify-js -g
+$ uglifyjs lib/shaders/BokehShader2.js -m -o lib/shaders/BokehShader2.min.js //需要在 nodemodule 下 使用 
+```
+
 
 #### 缺少的 .d.ts 库  https://github.com/DefinitelyTyped/DefinitelyTyped 查找
 

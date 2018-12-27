@@ -33,12 +33,12 @@
     ],
     "initial":[
         "/lib/stats/stats.min.js",
-        "/lib/Detector/Detector.js",
+        "/lib/Detector/Detector.min.js",
         "/lib/three/bin/three.min.js",
         "/lib/dat/dat.gui.min.js",
-        "/lib/OrbitControls/OrbitControls.js",
-        "/lib/tween/bin/Tween.min.js",
-        "/lib/cameras/CinematicCamera.js",
-        "/lib/shaders/BokehShader2.js"
+        "/lib/OrbitControls/OrbitControls.min.js",
+        "/lib/tween/Tween.min.js",
+        "/lib/cameras/CinematicCamera.min.js",
+        "/lib/shaders/BokehShader2.min.js"
     ]
 }
