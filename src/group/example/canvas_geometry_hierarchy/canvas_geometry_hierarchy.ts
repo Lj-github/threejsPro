@@ -13,8 +13,11 @@ module game {
             App.scene.background = new THREE.Color(0xffffff);
             var geometry = new THREE.BoxGeometry(100, 100, 100);
             var material = new THREE.MeshNormalMaterial({overdraw: 0.5});
+
             this.group = new THREE.Group();
+
             for (var i = 0; i < 200; i++) {
+
                 var mesh = new THREE.Mesh(geometry, material);
                 mesh.position.x = Math.random() * 2000 - 1000;
                 mesh.position.y = Math.random() * 2000 - 1000;
