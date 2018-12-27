@@ -10,6 +10,10 @@ const ExpConfig  = {
     webgl_shaders_vector:"Main_webgl_shaders_vector",
 
     //music
-    //readMusic : "ReadMusic",
-    ReadMusicCube:"ReadMusicCube"
+    //readMusic : "ReadMusic",Canvas_geometry_hierarchy
+    ReadMusicCube:"ReadMusicCube",
+
+
+    // game
+    Game_LayerElsfk:"LayerElsfk"
 }

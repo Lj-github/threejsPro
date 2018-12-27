@@ -3,30 +3,34 @@
 """
 生成js list  用于 应用
 """
-#Time2018/8/11下午3:46
+# Time2018/8/11下午3:46
 
 import os
 import json
 import shutil
-def GetFileList(dir, fileList = []):
+
+
+def GetFileList(dir, fileList=[]):
     newDir = dir
     if os.path.isfile(dir):
         fileList.append(dir)
     elif os.path.isdir(dir):
         for s in os.listdir(dir):
-            newDir=os.path.join(dir,s)
+            newDir = os.path.join(dir, s)
             GetFileList(newDir, fileList)
     return fileList
 
-def getExcludeByFileType(type,file):
-    allList = GetFileList(file,[])
+
+def getExcludeByFileType(type, file):
+    allList = GetFileList(file, [])
     resList = []
     for fil in allList:
-        fpath,fname = os.path.split(fil)
+        fpath, fname = os.path.split(fil)
         ftype = fname.split(".").pop()
         if type == ftype:
             resList.append(fil)
     return resList
+
 
 def buildJSJSON():
     jsonFIle = "JS.json"
@@ -47,14 +51,15 @@ def buildJSJSON():
             res["game"].append(fil)
     with open(jsonFIle, 'w') as f:
         json.dump(res, f, sort_keys=True, indent=4, separators=(',', ':'), ensure_ascii=False)
-        #json.dump(res, f)
+        # json.dump(res, f)
+
 
 def delDebugJS():
     print("delete js")
     filee = os.path.realpath(__file__)
     projectToolPath, projectToolName = os.path.split(filee)
     pa = projectToolPath + "/" + "debug"
-    allFi = GetFileList(projectToolPath + "/" + "debug",[])
+    allFi = GetFileList(projectToolPath + "/" + "debug", [])
     for f in allFi:
         os.remove(f)
     files = os.listdir(pa)  # 获取路径下的子文件(夹)列表
@@ -69,13 +74,14 @@ def runApp():
     runShell = "npm start"
     os.system(runShell)
 
+
 def buildTS():
     runShell = "tsc"
     os.system(runShell)
+
+
 if __name__ == '__main__':
     delDebugJS()
     buildTS()
     buildJSJSON()
-    #runApp()
-
-
+    # runApp()

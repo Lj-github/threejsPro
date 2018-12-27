@@ -3,12 +3,13 @@
 module game {
 
 
-    export class ReadMusicCube {
+    export class ReadMusicCube extends THREE.Scene{
         frustumSize = 1000;
         allCube = []
         musicReader :ReadMusic
         buff:Music.musicbuffObj
         constructor() {
+            super()
         }
 
         public initUI() {

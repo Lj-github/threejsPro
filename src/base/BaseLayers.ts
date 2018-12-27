@@ -1,16 +1,17 @@
-module game{
-    export class BaseLayers extends THREE.Layers{
-        constructor(){
+module game {
+    export abstract class BaseLayer extends THREE.Layers {
+        classsss = 55
+        constructor() {
             super()
-        }
-        public initUI(){
-
+            this.initUI()
         }
 
-        public removeSelf(){
+
+        public removeSelf() {
 
         }
 
+        public abstract initUI()
 
     }
 }

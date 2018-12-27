@@ -82,4 +82,3 @@ namespace App {
             })('');
     }
 }
-//window["App"] = App

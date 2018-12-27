@@ -1,5 +1,7 @@
 class Main {
-    constructor() { }
-    run() { App.run(); }
+    constructor() {
+    }
+    run() {
+        App.run();
+    }
 }
-/*****start load js ****/

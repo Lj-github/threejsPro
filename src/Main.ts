@@ -1,7 +1,11 @@
+class Main {
+    constructor() {
+    }
 
-
-class Main{constructor(){}public run(){App.run()}}
-/*****start load js ****/
+    public run() {
+        App.run()
+    }
+}
 
 
 
