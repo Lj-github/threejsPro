@@ -1,4 +1,5 @@
 import { Camera } from "./three-core";
+import {VRDisplay} from "../../Game"
 
 export class VRControls {
     constructor(camera: Camera, callback?: (param: string) => void);

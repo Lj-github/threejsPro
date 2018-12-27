@@ -1,4 +1,5 @@
 import { Camera, Matrix4, Renderer, Scene } from "./three-core";
+import {VRDisplay} from "../../Game"
 
 export class VREffect {
     constructor(renderer: Renderer, callback?: (params: string) => void);

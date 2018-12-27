@@ -37,6 +37,8 @@
         "/lib/three/bin/three.min.js",
         "/lib/dat/dat.gui.min.js",
         "/lib/OrbitControls/OrbitControls.js",
-        "/lib/tween/bin/Tween.min.js"
+        "/lib/tween/bin/Tween.min.js",
+        "/lib/cameras/CinematicCamera.js",
+        "/lib/shaders/BokehShader2.js"
     ]
 }

@@ -1,4 +1,5 @@
 export const REVISION: string;
+import {VRDisplay} from "../../Game"
 
 // https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent.button
 export enum MOUSE { LEFT, MIDDLE, RIGHT }

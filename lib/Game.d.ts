@@ -1,5 +1,4 @@
-interface Window {
-    WebSocket: any
-    MozWebSocket: any
-    VRDisplay: any
+export class VRDisplay {
 }
+export let MozWebSocket
+export let WebSocket

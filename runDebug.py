@@ -33,7 +33,7 @@ def getExcludeByFileType(type, file):
 
 
 def buildJSJSON():
-    jsonFIle = "JS.json"
+    jsonFIle = "manifest.json"
     allJSFile = "debug/"
     filee = os.path.realpath(__file__)
     projectToolPath, projectToolName = os.path.split(filee)
