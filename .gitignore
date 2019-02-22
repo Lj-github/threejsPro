@@ -3,3 +3,5 @@ three.js-master
 .awcache
 
 /debug/*
+
+.idea/*

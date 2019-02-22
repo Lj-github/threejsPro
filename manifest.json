@@ -23,6 +23,7 @@
         "/debug/group/example/Test/Main_test.js",
         "/debug/group/example/webgl_animation_skinning_morph/Gui_webgl_animation_skinning_morph.js",
         "/debug/group/example/webgl_animation_skinning_morph/Main_webgl_animation_skinning_morph.js",
+        "/debug/group/example/webgl_physics_cloth/webgl_physics_cloth.js",
         "/debug/group/ExpConfig.js",
         "/debug/group/music/ReadMusic.js",
         "/debug/group/music/ReadMusicCube.js",
@@ -39,6 +40,7 @@
         "/lib/OrbitControls/OrbitControls.min.js",
         "/lib/tween/Tween.min.js",
         "/lib/cameras/CinematicCamera.min.js",
-        "/lib/shaders/BokehShader2.min.js"
+        "/lib/shaders/BokehShader2.min.js",
+        "/lib/Ammo/ammo.js"
     ]
 }
