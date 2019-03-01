@@ -16,6 +16,7 @@ const ExpConfig = {
 
     // game
     Game_LayerElsfk: "LayerElsfk",
+    Game_SceneJump:"SceneJump",
 
     // ammo
     Game_webgl_physics_cloth: "webgl_physics_cloth"
