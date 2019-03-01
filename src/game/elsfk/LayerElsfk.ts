@@ -1,4 +1,6 @@
 module game {
+
+    // 俄罗斯方块
     let INTERSECTED
 
     export class LayerElsfk extends BaseLayer {
