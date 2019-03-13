@@ -1,5 +1,6 @@
 *.DS_Store
 three.js-master
+test/*
 .awcache
 
 /debug/*

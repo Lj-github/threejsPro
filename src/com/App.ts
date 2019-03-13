@@ -15,6 +15,9 @@ namespace App {
         DomTopic.startListen()
         App.renderer.render(App.scene, App.camera);
 
+
+
+
     }
 
     export let exampleTar: any

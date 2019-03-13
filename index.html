@@ -57,10 +57,10 @@
         loadNext();
     };
     var loadSingleScript = function (src, callback) {
-        if (src.split("/").pop() == "Main.js") {
-            callback()
-            return
-        }
+        // if (src.split("/").pop() == "Main.js") {
+        //     callback()
+        //     return
+        // }
 
         let cb = function (s) {
             s.parentNode.removeChild(s);
@@ -83,7 +83,10 @@
         var manifest = JSON.parse(xhr.response);
         var list = manifest.initial.concat(manifest.game);
         loadScript(list, function () {
-            App.run()
+            let main = new Main()
+            main.run()
+
+            //App.run()
         });
     });
     xhr.send(null);

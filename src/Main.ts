@@ -3,7 +3,14 @@ class Main {
     }
 
     public run() {
-        App.run()
+        if (!Detector.webgl) {
+            Detector.addGetWebGLMessage(null);
+        } else {
+            App.run()
+
+            App.viewOther(ExpConfig.Game_SceneJump)
+        }
+
     }
 }
 
