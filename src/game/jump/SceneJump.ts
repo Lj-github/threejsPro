@@ -66,14 +66,19 @@ module game {
 
         onDocumentMouseUp(e) {
             console.log(e)
+            SecTimeCb.unSubscribe(this.onUpTimer, this)
+            let time = SecTimeCb.FPS * this.touchTimeStamp
+            console.log("点击时间 为 ==> " + time)
+            this.touchTimeStamp = 0
+        }
 
-            this.touchTimeStamp
-
+        onUpTimer() {
+            this.touchTimeStamp++
         }
 
         onDocumentMouseDown(e) {
             console.log(e)
-
+            SecTimeCb.subscribe(this.onUpTimer, this)
         }
 
 
