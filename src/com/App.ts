@@ -16,8 +16,6 @@ namespace App {
         App.renderer.render(App.scene, App.camera);
 
 
-
-
     }
 
     export let exampleTar: any
@@ -91,9 +89,17 @@ namespace App {
     export function removeAllCanvas() {
         var canvass = document.getElementsByTagName("canvas")
         if (canvass.length > 0) {
-            for (let canvasElement of canvass){
+            for (let canvasElement of canvass) {
                 canvasElement.parentNode.removeChild(canvasElement)
             }
         }
+    }
+
+    /**
+     * 坐标轴辅助
+     */
+    export function addAxes() {
+        var axes = new THREE.AxesHelper(10);
+        App.scene.add(axes)
     }
 }
