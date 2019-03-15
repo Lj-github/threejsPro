@@ -66,6 +66,7 @@ export * from "./three-transformcontrols";
 export * from "./three-unrealbloompass";
 export * from "./three-vrcontrols";
 export * from "./three-vreffect";
+//添加 其他 库
 export * from "../../cameras/CinematicCamera"
-
+export * from "../../Water/Water"
 export as namespace THREE;
