@@ -22,6 +22,14 @@ namespace App {
 
     export function viewOther(className: string) {
         if (exampleTar) {
+            if (exampleTar.onRemove) {
+                exampleTar.onRemove()
+            }
+            DomTopic.unRemoveDomEventListenerByTarget(exampleTar)
+            Animate.unAllRenderRunFunctionByTarget(exampleTar)
+            SecTimeCb.unsubscribeAllOnTarget(exampleTar)
+            AppTimeOut.unscheduleAllOnTarget(exampleTar)
+
             if (exampleTar.removeSelf) {
                 exampleTar.removeSelf()
             } else {
@@ -29,13 +37,26 @@ namespace App {
                     App.scene.remove(obj)
                 }
             }
-
+            removeTarExpCanvas()
             exampleTar = undefined
         }
         var tar = new game[className]()
         if (className) {
             exampleTar = tar
             tar.initUI()
+        }
+
+    }
+
+    const containNode = ["SCRIPT", 'CANVAS']
+
+    export function removeTarExpCanvas() {
+        let body = document.getElementsByTagName("body")[0]
+        let all = body.children
+        for (let item of all) {
+            if (containNode.indexOf(item.nodeName) === -1) {
+                body.removeChild(item)
+            }
         }
 
     }
@@ -56,7 +77,7 @@ namespace App {
 
     export let renderer: THREE.WebGLRenderer
     export let randerType = 1 //0: canvas, 1 : webgl
-    export let scene: THREE.Scene
+    export let scene: THREE.Scene //Physijs.Scene //
     export let camera: any//THREE.Camera
     export interface pos {
         x: number;
@@ -101,5 +122,15 @@ namespace App {
     export function addAxes() {
         var axes = new THREE.AxesHelper(10);
         App.scene.add(axes)
+    }
+
+    /***
+     * 初始化 物理世界
+     */
+    export function initPhysicWord() {
+        if (!Physijs.scripts.worker) {
+            Physijs.scripts.worker = window['threejsPro'] + '/lib/physi/physijs_worker.js';
+            Physijs.scripts.ammo = window['threejsPro'] + '/lib/Ammo/ammo.js';
+        }
     }
 }

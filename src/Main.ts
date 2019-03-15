@@ -8,7 +8,7 @@ class Main {
         } else {
             App.run()
 
-            App.viewOther(ExpConfig.Game_SceneJump)
+           // App.viewOther(ExpConfig.Game_SceneJump)
         }
 
     }

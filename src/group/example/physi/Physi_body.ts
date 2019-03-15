@@ -1,46 +1,40 @@
 module game {
-
-    var initScene, render, applyForce, setMousePosition, mouse_position,
-        ground_material, box_material, loader,
-        renderer, render_stats, physics_stats, scene, ground, light, camera, box, boxes = [];
+    let self = null
 
     export class Physi_body {
-
         constructor() {
-            Physijs.scripts.worker = window['threejsPro'] + '/lib/physi/physijs_worker.js';
-            Physijs.scripts.ammo = window['threejsPro'] + '/lib/Ammo/ammo.js';
         }
 
-        initScene() {
-            renderer = new THREE.WebGLRenderer({antialias: true});
-            renderer.setSize(window.innerWidth, window.innerHeight);
-            renderer.shadowMap.enabled = true;
-            renderer.shadowMapSoft = true;
-            document.getElementById('viewport').appendChild(renderer.domElement);
+        boxes
+        render_stats
+        box
+        mouse_position
+        physics_stats
+
+        initUI() {
+            self = this
+            App.initPhysicWord()
+            var ground_material, box_material, loader,
+                render_stats, physics_stats, scene, ground, light, camera, box, boxes = [];
 
             render_stats = new Stats();
             render_stats.domElement.style.position = 'absolute';
             render_stats.domElement.style.top = '1px';
             render_stats.domElement.style.zIndex = 100;
-            document.getElementById('viewport').appendChild(render_stats.domElement);
-
+            document.getElementsByTagName("body")[0].appendChild(render_stats.domElement);
+            this.render_stats = render_stats
             physics_stats = new Stats();
             physics_stats.domElement.style.position = 'absolute';
             physics_stats.domElement.style.top = '50px';
             physics_stats.domElement.style.zIndex = 100;
-            document.getElementById('viewport').appendChild(physics_stats.domElement);
-
-            scene = new Physijs.Scene;
+            document.getElementsByTagName("body")[0].appendChild(physics_stats.domElement);
+            App.scene = new Physijs.Scene;
+            scene = App.scene
             scene.setGravity(new THREE.Vector3(0, -30, 0));
             scene.addEventListener(
                 'update',
-                function () {
-                    applyForce();
-                    scene.simulate(undefined, 1);
-                    physics_stats.update();
-                }
+                this.rander
             );
-
             camera = new THREE.PerspectiveCamera(
                 35,
                 window.innerWidth / window.innerHeight,
@@ -49,38 +43,38 @@ module game {
             );
             camera.position.set(60, 50, 60);
             camera.lookAt(scene.position);
+            App.camera = camera
+            App.scene = scene
             scene.add(camera);
-
             // Light
             light = new THREE.DirectionalLight(0xFFFFFF);
             light.position.set(20, 40, -15);
             light.target.position.copy(scene.position);
             light.castShadow = true;
-            light.shadowCameraLeft = -60;
-            light.shadowCameraTop = -60;
-            light.shadowCameraRight = 60;
-            light.shadowCameraBottom = 60;
-            light.shadowCameraNear = 20;
-            light.shadowCameraFar = 200;
+            light.shadow.camera.left = -60;
+            light.shadow.camera.top = -60;
+            light.shadow.camera.right = 60;
+            light.shadow.camera.bottom = 60;
+            light.shadow.camera.near = 20;
+            light.shadow.camera.far = 200;
             light.shadowBias = -.0001
-            light.shadowMapWidth = light.shadowMapHeight = 2048;
+            light.shadow.mapSize.width = light.shadow.mapSize.height = 2048;
             light.shadowDarkness = .7;
             scene.add(light);
-
             // Loader
             loader = new THREE.TextureLoader();
-
             // Materials
             ground_material = Physijs.createMaterial(
-                new THREE.MeshLambertMaterial({map: loader.load('images/rocks.jpg')}),
+                new THREE.MeshLambertMaterial({map: loader.load('resource/images/rocks.jpg')}),
                 .8, // high friction
                 .4 // low restitution
             );
             ground_material.map.wrapS = ground_material.map.wrapT = THREE.RepeatWrapping;
             ground_material.map.repeat.set(3, 3);
+            this.physics_stats = physics_stats
 
             box_material = Physijs.createMaterial(
-                new THREE.MeshLambertMaterial({map: loader.load('images/plywood.jpg')}),
+                new THREE.MeshLambertMaterial({map: loader.load('resource/images/plywood.jpg')}),
                 .4, // low friction
                 .6 // high restitution
             );
@@ -120,20 +114,33 @@ module game {
                 scene.add(box);
                 boxes.push(box);
             }
+            this.box = box
+            this.boxes = boxes
 
-            renderer.domElement.addEventListener('mousemove', setMousePosition);
-
-            requestAnimationFrame(render);
+            DomTopic.addDomEventListener('mousemove', this.setMousePosition, this)
+            Animate.addRenderRunFunction(this.render, this)
             scene.simulate();
         };
 
+
+        onRemove() {
+            App.scene.removeEventListener('update', this.rander)
+        }
+
+        rander() {
+            let scene = <Physijs.Scene> App.scene
+            self.applyForce();
+            scene.simulate(undefined, 1);
+            self.physics_stats.update();
+        }
+
         render() {
-            requestAnimationFrame(render);
-            renderer.render(scene, camera);
-            render_stats.update();
+            this.render_stats.update();
         };
 
         setMousePosition(evt) {
+            let renderer = App.renderer
+            let camera = App.camera
             // Find where mouse cursor intersects the ground plane
             var vector = new THREE.Vector3(
                 (evt.clientX / renderer.domElement.clientWidth) * 2 - 1,
@@ -142,15 +149,16 @@ module game {
             );
             vector.unproject(camera);
             vector.sub(camera.position).normalize();
-
+            let box = this.box
             var coefficient = (box.position.y - camera.position.y) / vector.y
-            mouse_position = camera.position.clone().add(vector.multiplyScalar(coefficient));
+            this.mouse_position = camera.position.clone().add(vector.multiplyScalar(coefficient));
         };
 
         applyForce() {
+            let mouse_position = this.mouse_position
             if (!mouse_position) return;
             var strength = 35, distance, effect, offset, box;
-
+            let boxes = this.boxes
             for (var i = 0; i < boxes.length; i++) {
                 box = boxes[i];
                 distance = mouse_position.distanceTo(box.position),
@@ -159,9 +167,5 @@ module game {
                 box.applyImpulse(effect, offset);
             }
         };
-
-        //window.onload = initScene;
-
-
     }
 }

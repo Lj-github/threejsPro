@@ -19,5 +19,6 @@ const ExpConfig = {
     Game_SceneJump:"SceneJump",
 
     // ammo
-    Game_webgl_physics_cloth: "webgl_physics_cloth"
+    Game_webgl_physics_cloth: "webgl_physics_cloth",
+    Physi_body:"Physi_body"
 }
