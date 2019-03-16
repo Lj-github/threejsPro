@@ -1,4 +1,12 @@
-// Type definitions for lib/OrbitControls/OrbitControls.js
-// Project: [LIBRARY_URL_HERE] 
-// Definitions by: [YOUR_NAME_HERE] <[YOUR_URL_HERE]> 
-// Definitions: https://github.com/borisyankov/DefinitelyTyped
+import {Mesh, ShaderMaterial} from "../three/libs";
+
+
+export class OrbitControls extends Mesh {
+    constructor(object: any, domElement: any);
+
+}
+
+
+export const ScreenSpacePanning ;
+
+export const HorizontalPanning ;

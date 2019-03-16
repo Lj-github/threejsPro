@@ -6,6 +6,7 @@
         "/debug/com/App.js",
         "/debug/com/APPTimeOut.js",
         "/debug/com/DomTopic.js",
+        "/debug/com/KeyControlMgr.js",
         "/debug/com/Loader.js",
         "/debug/com/Render.js",
         "/debug/com/SecTimeCb.js",
@@ -21,6 +22,7 @@
         "/debug/group/example/canvas_geometry_birds/Main_birds.js",
         "/debug/group/example/canvas_geometry_earth/Main_canvas_geometry_earth.js",
         "/debug/group/example/canvas_geometry_hierarchy/canvas_geometry_hierarchy.js",
+        "/debug/group/example/ocean/Ocean_Sky.js",
         "/debug/group/example/physi/Physi_body.js",
         "/debug/group/example/shader/Main_webgl_shaders_vector.js",
         "/debug/group/example/Test/Main_test.js",
@@ -46,6 +48,8 @@
         "/lib/shaders/BokehShader2.min.js",
         "/lib/Ammo/ammo.js",
         "/lib/physi/physi.js",
-        "/lib/physi/physijs_worker.js"
+        "/lib/physi/physijs_worker.js",
+        "/lib/sky/Sky.js",
+        "/lib/Water/Water.js"
     ]
 }

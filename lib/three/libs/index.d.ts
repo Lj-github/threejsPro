@@ -70,4 +70,5 @@ export * from "./three-vreffect";
 export * from "../../cameras/CinematicCamera"
 export * from "../../Water/Water"
 export * from "../../sky/Sky"
+//export * from "../../OrbitControls/OrbitControls"
 export as namespace THREE;

@@ -1,14 +1,12 @@
 module game {
-    // var container, stats;
-    // var camera, scene, renderer, light;
-    // var controls, water, sphere;
+
 
     export class Ocean_Sky {
         constructor() {
 
         }
 
-        init() {
+        initUI() {
             //animate();
 
             App.scene = new THREE.Scene();
@@ -29,7 +27,7 @@ module game {
                 {
                     textureWidth: 512,
                     textureHeight: 512,
-                    waterNormals: new THREE.TextureLoader().load('textures/waternormals.jpg', function (texture) {
+                    waterNormals: new THREE.TextureLoader().load('three.js-master/examples/textures/waternormals.jpg', function (texture) {
                         texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
                     }),
                     alpha: 1.0,
@@ -40,6 +38,7 @@ module game {
                     fog: scene.fog !== undefined
                 }
             );
+            this.water = water
 
             water.rotation.x = -Math.PI / 2;
 
@@ -80,7 +79,7 @@ module game {
                 sky.material.uniforms.sunPosition.value = light.position.copy(light.position);
                 water.material.uniforms.sunDirection.value.copy(light.position).normalize();
 
-                cubeCamera.update(renderer, scene);
+                cubeCamera.update(App.renderer, App.scene);
 
             }
 
@@ -104,24 +103,26 @@ module game {
                 side: THREE.DoubleSide
             });
 
-            sphere = new THREE.Mesh(geometry, material);
+            let sphere = new THREE.Mesh(geometry, material);
             scene.add(sphere);
+            this.sphere = sphere
+            window["sphere"] = sphere
 
             //
 
-            controls = new THREE.OrbitControls(camera, renderer.domElement);
-            controls.maxPolarAngle = Math.PI * 0.495;
-            controls.target.set(0, 10, 0);
-            controls.panningMode = THREE.HorizontalPanning;
-            controls.minDistance = 40.0;
-            controls.maxDistance = 200.0;
-            camera.lookAt(controls.target);
+            // let controls = new THREE.OrbitControls(camera, App.renderer.domElement);
+            // controls.maxPolarAngle = Math.PI * 0.495;
+            // controls.target.set(0, 10, 0);
+            // controls.panningMode = THREE.HorizontalPanning;
+            // controls.minDistance = 40.0;
+            // controls.maxDistance = 200.0;
+            // camera.lookAt(controls.target);
 
             //
 
-            stats = new Stats();
-            container.appendChild(stats.dom);
-
+            let stats = new Stats();
+            document.getElementsByTagName("body")[0].appendChild(stats.dom);
+            this.stats = stats
             // GUI
 
             var gui = new dat.GUI();
@@ -138,42 +139,57 @@ module game {
             folder.add(uniforms.size, 'value', 0.1, 10, 0.1).name('size');
             folder.add(uniforms.alpha, 'value', 0.9, 1, .001).name('alpha');
             folder.open();
-
-            //
-
-            window.addEventListener('resize', onWindowResize, false);
-
+            DomTopic.addDomEventListener(DomTopic.event.resize, this.onWindowResize, this);
+            Animate.addRenderRunFunction(this.animate, this)
+            KeyControlMgr.addKeyUpEventListener(KeyControlMgr.Key.LEFT, this.control, this)
+            KeyControlMgr.addKeyUpEventListener(KeyControlMgr.Key.RIGHT, this.control1, this)
+            KeyControlMgr.addKeyUpEventListener(KeyControlMgr.Key.UP, this.control2, this)
+            KeyControlMgr.addKeyUpEventListener(KeyControlMgr.Key.DOWN, this.control13, this)
         }
 
+        speed = 0.3
+
+        control2() {
+            //应该是用 tween  设置  移动缓冲 池
+            this.sphere.position.z = this.sphere.position.z - this.speed
+        }
+
+        control13() {
+            this.sphere.position.z = this.sphere.position.z + this.speed
+        }
+
+        control(keyCode: number) {
+            this.sphere.position.x = this.sphere.position.x + this.speed
+        }
+
+        control1(keyCode: number) {
+            this.sphere.position.x = this.sphere.position.x - this.speed
+        }
+
+        stats
+        sphere
+        water
+
         onWindowResize() {
-
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
-
-            renderer.setSize(window.innerWidth, window.innerHeight);
+            App.camera.aspect = window.innerWidth / window.innerHeight;
+            App.camera.updateProjectionMatrix();
+            App.renderer.setSize(window.innerWidth, window.innerHeight);
 
         }
 
         animate() {
 
-            requestAnimationFrame(animate);
-            render();
-            stats.update();
 
-        }
-
-        render() {
-
+            this.stats.update();
             var time = performance.now() * 0.001;
 
-            sphere.position.y = Math.sin(time) * 20 + 5;
-            sphere.rotation.x = time * 0.5;
-            sphere.rotation.z = time * 0.51;
+            this.sphere.position.y = Math.sin(time) * 20 + 5;
+            this.sphere.rotation.x = time * 0.5;
+            this.sphere.rotation.z = time * 0.51;
 
-            water.material.uniforms.time.value += 1.0 / 60.0;
-
-            renderer.render(scene, camera);
-
+            this.water.material.uniforms.time.value += 1.0 / 60.0;
         }
+
+
     }
 }

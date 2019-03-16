@@ -1,4 +1,4 @@
-// 原来简单地消息机制
+
 namespace Topic {
     var eventMaps: any = {}
     interface eventOneData {

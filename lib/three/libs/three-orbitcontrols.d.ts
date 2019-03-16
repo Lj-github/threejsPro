@@ -1,11 +1,14 @@
 import { Camera, MOUSE, Object3D, Vector3 } from "./three-core";
 
+export const ScreenSpacePanning ;
+
+export const HorizontalPanning ;
 export class OrbitControls {
     constructor(object: Camera, domElement?: HTMLElement);
 
     object: Camera;
     domElement: HTMLElement | HTMLDocument;
-
+    panningMode:number
     // API
     enabled: boolean;
     target: Vector3;
