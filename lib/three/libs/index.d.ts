@@ -69,4 +69,5 @@ export * from "./three-vreffect";
 //添加 其他 库
 export * from "../../cameras/CinematicCamera"
 export * from "../../Water/Water"
+export * from "../../sky/Sky"
 export as namespace THREE;

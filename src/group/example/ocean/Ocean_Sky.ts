@@ -1,33 +1,30 @@
 module game {
-    var container, stats;
-    var camera, scene, renderer, light;
-    var controls, water, sphere;
+    // var container, stats;
+    // var camera, scene, renderer, light;
+    // var controls, water, sphere;
 
     export class Ocean_Sky {
         constructor() {
 
         }
 
-
-
-
         init() {
             //animate();
-            container = document.getElementById('container');
 
-            scene = new THREE.Scene();
-
-            camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 1, 20000);
+            App.scene = new THREE.Scene();
+            let scene = App.scene
+            App.camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 1, 20000);
+            let camera = App.camera
             camera.position.set(30, 30, 100);
 
-            light = new THREE.DirectionalLight(0xffffff, 0.8);
+            let light = new THREE.DirectionalLight(0xffffff, 0.8);
             scene.add(light);
 
             // Water
 
             var waterGeometry = new THREE.PlaneBufferGeometry(10000, 10000);
 
-            water = new THREE.Water(
+            let water = new THREE.Water(
                 waterGeometry,
                 {
                     textureWidth: 512,
