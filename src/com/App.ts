@@ -29,6 +29,7 @@ namespace App {
             Animate.unAllRenderRunFunctionByTarget(exampleTar)
             SecTimeCb.unsubscribeAllOnTarget(exampleTar)
             AppTimeOut.unscheduleAllOnTarget(exampleTar)
+            KeyControlMgr.removeKeyEventListenerByTar(exampleTar)
 
             if (exampleTar.removeSelf) {
                 exampleTar.removeSelf()

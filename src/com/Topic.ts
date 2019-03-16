@@ -21,7 +21,6 @@ namespace Topic {
     }
 
     export function unsubscribe(callback, cbTarget) {
-        // ("loop ------EZTopic.unsubscribe");
         var eventMapsBake = eventMaps
         Object.keys(eventMaps).forEach((key) => {
             var items = eventMaps[key].filter((item) => {
@@ -32,8 +31,6 @@ namespace Topic {
     }
 
     export function unsubscribeAllOnTarget(target: any) {
-        // ("loop ------EZTopic.unsubscribeAllOnTarget");
-
         if (!target) {
             return
         }
@@ -47,8 +44,6 @@ namespace Topic {
     }
 
     export function publish(...args) {
-
-
         if (!arguments || arguments.length <= 0) {
             return
         }
